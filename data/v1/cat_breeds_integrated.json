@@ -1,0 +1,3296 @@
+[
+  {
+    "breed_id": "abys",
+    "name_en": "Abyssinian",
+    "name_ko": "아비시니안 고양이",
+    "origin_ko": "이집트",
+    "personality_traits": [
+      "활동적",
+      "지적",
+      "애정이 많음",
+      "독립적",
+      "부드러움"
+    ],
+    "physical_traits": [
+      "특징적인 '틱' 패턴의 털",
+      "긴 몸매",
+      "큰 귀",
+      "날씬한 외모",
+      "다양한 색상의 털"
+    ],
+    "summary_ko": "아비시니안 고양이는 독특한 '틱' 패턴의 털을 가진 고양이로, 애정이 많고 활동적인 성격을 지니고 있습니다. 이들은 사람과 다른 동물들과 잘 어울리며, 다소 독립적인 성향을 보이지만, 가족과의 유대감을 중요시합니다.",
+    "potential_questions": [
+      "아비시니안 고양이는 어떤 성격을 가지고 있나요?",
+      "아비시니안 고양이의 털 관리 방법은 무엇인가요?",
+      "아비시니안 고양이는 다른 동물들과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "14 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 3,
+      "dog_friendly": 4,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 2,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Abyssinian_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Abyssinian.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/abyssinian",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/abyssinian"
+    }
+  },
+  {
+    "breed_id": "aege",
+    "name_en": "Aegean",
+    "name_ko": "에게안 고양이",
+    "origin_ko": "그리스",
+    "personality_traits": [
+      "애정이 많음",
+      "사교적",
+      "지적",
+      "활발함",
+      "놀이를 좋아함"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "부드러운 털",
+      "다양한 색상",
+      "강한 체격",
+      "큰 눈"
+    ],
+    "summary_ko": "에게안 고양이는 그리스의 키클라데스 제도에서 자연적으로 발생한 고양이로, 사람들과 잘 어울리며 가족과 아이들에게 적합한 성격을 가지고 있습니다. 이들은 사교적이고 활발하여, 놀이를 즐기는 특징이 있습니다.",
+    "potential_questions": [
+      "에게안 고양이는 어떤 환경에서 잘 자라나요?",
+      "에게안 고양이의 특징은 무엇인가요?",
+      "에게안 고양이는 다른 동물들과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "9 - 12",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 4,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Aegean_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/aegean-cat",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "abob",
+    "name_en": "American Bobtail",
+    "name_ko": "아메리칸 밥테일 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "지적",
+      "상호작용을 좋아함",
+      "활발함",
+      "놀이를 좋아함",
+      "민감함"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "튼튼한 체격",
+      "부드러운 털",
+      "다양한 색상",
+      "큰 눈"
+    ],
+    "summary_ko": "아메리칸 밥테일 고양이는 독특한 짧은 꼬리를 가진 고양이로, 사랑스럽고 지적인 성격을 지니고 있습니다. 이들은 가족과의 유대감을 중요시하며, 매우 상호작용적인 성향을 보입니다.",
+    "potential_questions": [
+      "아메리칸 밥테일 고양이는 어떤 성격을 가지고 있나요?",
+      "아메리칸 밥테일 고양이의 털 관리 방법은 무엇인가요?",
+      "아메리칸 밥테일 고양이는 다른 동물들과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "11 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/American_Bobtail",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/AmericanBobtail.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/american-bobtail",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/american-bobtail"
+    }
+  },
+  {
+    "breed_id": "acur",
+    "name_en": "American Curl",
+    "name_ko": "아메리칸 컬 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "호기심이 많음",
+      "지적",
+      "상호작용을 좋아함",
+      "활발함"
+    ],
+    "physical_traits": [
+      "컬이 진 귀",
+      "부드러운 털",
+      "중간 크기",
+      "다양한 색상",
+      "큰 눈"
+    ],
+    "summary_ko": "아메리칸 컬 고양이는 귀가 독특하게 컬이 진 고양이로, 사람과의 상호작용을 좋아하고 애정이 많은 성격을 지니고 있습니다. 이들은 새로운 환경에 빠르게 적응하며, 다른 동물들과도 잘 어울립니다.",
+    "potential_questions": [
+      "아메리칸 컬 고양이는 어떤 성격을 가지고 있나요?",
+      "아메리칸 컬 고양이의 귀 특징은 무엇인가요?",
+      "아메리칸 컬 고양이는 다른 동물들과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/American_Curl",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/AmericanCurl.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/american-curl",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/american-curl"
+    }
+  },
+  {
+    "breed_id": "asho",
+    "name_en": "American Shorthair",
+    "name_ko": "아메리칸 쇼트헤어 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "활동적",
+      "호기심이 많음",
+      "온화함",
+      "놀이를 좋아함",
+      "차분함"
+    ],
+    "physical_traits": [
+      "튼튼한 체격",
+      "짧은 털",
+      "다양한 색상",
+      "큰 눈",
+      "부드러운 털"
+    ],
+    "summary_ko": "아메리칸 쇼트헤어 고양이는 건강하고 사랑스러운 성격을 가진 고양이로, 아이들과 다른 애완동물들과 잘 어울립니다. 이들은 긴 수명과 뛰어난 건강을 자랑하며, 가족과의 유대감을 중요시합니다.",
+    "potential_questions": [
+      "아메리칸 쇼트헤어 고양이는 어떤 성격을 가지고 있나요?",
+      "아메리칸 쇼트헤어 고양이의 털 관리 방법은 무엇인가요?",
+      "아메리칸 쇼트헤어 고양이는 다른 동물들과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "15 - 17",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/American_Shorthair",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/AmericanShorthair.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/american-shorthair",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/american-shorthair"
+    }
+  },
+  {
+    "breed_id": "awir",
+    "name_en": "American Wirehair",
+    "name_ko": "아메리칸 와이어헤어",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "호기심이 많음",
+      "온순함",
+      "지능적임",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "곱슬곱슬한 수염",
+      "거친 털",
+      "중간 크기",
+      "튼튼한 체격"
+    ],
+    "summary_ko": "아메리칸 와이어헤어는 뉴욕 주에서 유래된 고양이 품종으로, 독특한 곱슬털과 온순한 성격으로 알려져 있습니다. 이 고양이는 사교적이고 지능적이며, 주인과의 상호작용을 즐깁니다.",
+    "potential_questions": [
+      "아메리칸 와이어헤어의 평균 수명은 얼마인가요?",
+      "이 고양이는 어떤 성격을 가지고 있나요?",
+      "아메리칸 와이어헤어는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "14 - 18",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/American_Wirehair",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/AmericanWirehair.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/american-wirehair",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "amau",
+    "name_en": "Arabian Mau",
+    "name_ko": "아라비안 마우",
+    "origin_ko": "아랍 에미리트",
+    "personality_traits": [
+      "애정이 많음",
+      "민첩함",
+      "호기심이 많음",
+      "독립적임",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "긴 다리",
+      "둥근 머리",
+      "큰 귀"
+    ],
+    "summary_ko": "아라비안 마우는 아랍 반도에서 유래된 고양이 품종으로, 사교적이고 에너지가 넘치는 성격을 가지고 있습니다. 이 고양이는 다른 애완동물 및 어린이와 잘 어울리며, 적응력이 뛰어납니다.",
+    "potential_questions": [
+      "아라비안 마우는 어떤 성격을 가지고 있나요?",
+      "이 고양이는 얼마나 자주 털갈이를 하나요?",
+      "아라비안 마우는 실내에서 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Arabian_Mau",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": ""
+    }
+  },
+  {
+    "breed_id": "amis",
+    "name_en": "Australian Mist",
+    "name_ko": "오스트레일리안 미스트",
+    "origin_ko": "호주",
+    "personality_traits": [
+      "활발함",
+      "사교적임",
+      "재미있음",
+      "온순함",
+      "애정이 많음"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "독특한 털 패턴",
+      "튼튼한 체격",
+      "큰 눈"
+    ],
+    "summary_ko": "오스트레일리안 미스트는 호주에서 개발된 고양이 품종으로, 애정이 많고 사교적인 성격을 가지고 있습니다. 이 고양이는 어린이와 잘 어울리며, 실내에서 생활하는 것을 좋아합니다.",
+    "potential_questions": [
+      "오스트레일리안 미스트는 어떤 성격을 가지고 있나요?",
+      "이 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "오스트레일리안 미스트는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 4,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Australian_Mist",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "bali",
+    "name_en": "Balinese",
+    "name_ko": "발리네즈",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "지능적임",
+      "장난기 많음"
+    ],
+    "physical_traits": [
+      "중간 길이의 털",
+      "사파이어 블루 눈",
+      "우아한 체형",
+      "뾰족한 귀"
+    ],
+    "summary_ko": "발리네즈는 미국에서 유래된 긴 털을 가진 고양이 품종으로, 사교적이고 지능적인 성격을 가지고 있습니다. 이 고양이는 대화하는 것을 좋아하며, 주인과의 상호작용을 즐깁니다.",
+    "potential_questions": [
+      "발리네즈는 어떤 성격을 가지고 있나요?",
+      "이 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "발리네즈는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 3,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Balinese_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Balinese.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/balinese",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/balinese"
+    }
+  },
+  {
+    "breed_id": "bamb",
+    "name_en": "Bambino",
+    "name_ko": "밤비노",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "활발함",
+      "친근함",
+      "지능적임"
+    ],
+    "physical_traits": [
+      "짧은 다리",
+      "큰 귀",
+      "대개 털이 없음",
+      "작은 체구"
+    ],
+    "summary_ko": "밤비노는 스핑크스와 먼치킨의 교배로 만들어진 고양이 품종으로, 짧은 다리와 큰 귀를 가지고 있습니다. 이 고양이는 가족과 함께하는 것을 좋아하며, 애정이 많은 성격을 가지고 있습니다.",
+    "potential_questions": [
+      "밤비노는 어떤 성격을 가지고 있나요?",
+      "이 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "밤비노는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 4",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/List_of_experimental_cat_breeds",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "beng",
+    "name_en": "Bengal",
+    "name_ko": "벵갈 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "경계심",
+      "민첩함",
+      "에너지 넘침",
+      "지능적",
+      "호기심"
+    ],
+    "physical_traits": [
+      "점박이 무늬",
+      "로제트 무늬",
+      "마블링",
+      "근육질 체형",
+      "짧은 털"
+    ],
+    "summary_ko": "벵갈 고양이는 아시아 표범 고양이와 집고양이를 교배하여 만들어진 하이브리드 품종으로, 매우 지능적이고 호기심이 많으며 활동적입니다. 이들은 많은 상호작용을 요구하며, 주인과의 교감을 통해 행복을 느끼는 고양이입니다.",
+    "potential_questions": [
+      "벵갈 고양이는 어떤 성격을 가지고 있나요?",
+      "벵갈 고양이는 얼마나 자주 털을 빠지나요?",
+      "벵갈 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 0,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Bengal_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Bengal.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/bengal",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/bengal"
+    }
+  },
+  {
+    "breed_id": "birm",
+    "name_en": "Birman",
+    "name_ko": "버만 고양이",
+    "origin_ko": "프랑스",
+    "personality_traits": [
+      "애정이 많음",
+      "활동적",
+      "부드러움",
+      "사교적"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "색점 무늬",
+      "깊은 파란 눈",
+      "흰색 장갑"
+    ],
+    "summary_ko": "버만 고양이는 부드러운 털과 깊은 파란 눈을 가진 조용하고 온순한 품종으로, 사람들과의 교감을 좋아합니다. 이들은 주인을 따라다니며, 소프트한 목소리로 의사소통을 하며 사랑받기를 원합니다.",
+    "potential_questions": [
+      "버만 고양이는 어떤 성격을 가지고 있나요?",
+      "버만 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "버만 고양이는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "14 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Birman",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Birman.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/birman",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/birman"
+    }
+  },
+  {
+    "breed_id": "bomb",
+    "name_en": "Bombay",
+    "name_ko": "봄바이 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "의존적",
+      "부드러움",
+      "지능적",
+      "놀이 좋아함"
+    ],
+    "physical_traits": [
+      "광택 있는 검은 털",
+      "큰 구리색 눈",
+      "근육질 체형",
+      "짧은 털"
+    ],
+    "summary_ko": "봄바이 고양이는 반짝이는 검은 털과 큰 구리색 눈을 가진 짧은 털 품종으로, 주인과의 강한 유대감을 형성합니다. 이들은 사랑받기를 원하며, 주인을 따라다니고 대화하는 것을 좋아합니다.",
+    "potential_questions": [
+      "봄바이 고양이는 어떤 성격을 가지고 있나요?",
+      "봄바이 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "봄바이 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Bombay_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Bombay.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/bombay",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/bombay"
+    }
+  },
+  {
+    "breed_id": "bslo",
+    "name_en": "British Longhair",
+    "name_ko": "브리티시 롱헤어 고양이",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "애정이 많음",
+      "편안함",
+      "독립적",
+      "지능적",
+      "사교적"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "두꺼운 체형",
+      "넓은 얼굴",
+      "다양한 색상"
+    ],
+    "summary_ko": "브리티시 롱헤어 고양이는 매우 편안하고 독립적인 성격을 가진 고양이로, 주인과의 교감을 즐기지만 자신의 방식으로 다가오는 것을 선호합니다. 이들은 애정이 많고, 다른 고양이와도 잘 어울립니다.",
+    "potential_questions": [
+      "브리티시 롱헤어 고양이는 어떤 성격을 가지고 있나요?",
+      "브리티시 롱헤어 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "브리티시 롱헤어 고양이는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 8",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 5,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/British_Shorthair",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "bsho",
+    "name_en": "British Shorthair",
+    "name_ko": "브리티시 쇼트헤어 고양이",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "애정이 많음",
+      "온화함",
+      "부드러움",
+      "충성스러움",
+      "차분함"
+    ],
+    "physical_traits": [
+      "두꺼운 체형",
+      "짧은 털",
+      "넓은 얼굴",
+      "다양한 색상"
+    ],
+    "summary_ko": "브리티시 쇼트헤어 고양이는 온화하고 차분한 성격을 가진 고양이로, 가족 구성원 모두에게 애정을 쏟습니다. 이들은 놀이를 좋아하지만, 자주 관심을 요구하지 않으며 혼자서도 잘 놀 수 있는 고양이입니다.",
+    "potential_questions": [
+      "브리티시 쇼트헤어 고양이는 어떤 성격을 가지고 있나요?",
+      "브리티시 쇼트헤어 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "브리티시 쇼트헤어 고양이는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 9",
+      "life_span": "12 - 17",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 4,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 2,
+      "grooming": 2,
+      "health_issues": 2,
+      "intelligence": 3,
+      "shedding_level": 4,
+      "social_needs": 3,
+      "stranger_friendly": 2,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/British_Shorthair",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/BritishShorthair.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/british-shorthair",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/british-shorthair"
+    }
+  },
+  {
+    "breed_id": "bure",
+    "name_en": "Burmese",
+    "name_ko": "버마 고양이",
+    "origin_ko": "버마",
+    "personality_traits": [
+      "호기심",
+      "지능적",
+      "온순함",
+      "사교적",
+      "활발함"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "짧은 털",
+      "둥근 머리",
+      "큰 눈",
+      "근육질 몸"
+    ],
+    "summary_ko": "버마 고양이는 사람과 함께하는 것을 좋아하며, 항상 사람 곁에 머무르기를 원합니다. 이들은 매우 사교적이고 활발한 성격을 가지고 있으며, 다양한 색상으로 존재합니다.",
+    "potential_questions": [
+      "버마 고양이는 어떤 성격을 가지고 있나요?",
+      "버마 고양이의 평균 수명은 얼마인가요?",
+      "버마 고양이는 어떤 털 색상을 가지고 있나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "15 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Burmese_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Burmese.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/burmese",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/burmese"
+    }
+  },
+  {
+    "breed_id": "buri",
+    "name_en": "Burmilla",
+    "name_ko": "버밀라 고양이",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "온순함",
+      "친근함",
+      "지능적",
+      "활발함",
+      "사교적"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "부드러운 털",
+      "둥근 얼굴",
+      "큰 눈",
+      "짧은 다리"
+    ],
+    "summary_ko": "버밀라 고양이는 친근하고 온순한 성격을 가진 고양이로, 주인과 함께 시간을 보내는 것을 좋아합니다. 이들은 최소한의 관리로도 잘 지내며, 충성스럽고 애정이 많은 반려동물입니다.",
+    "potential_questions": [
+      "버밀라 고양이는 어떤 특징이 있나요?",
+      "버밀라 고양이는 얼마나 자주 털을 빗어줘야 하나요?",
+      "버밀라 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Burmilla",
+      "cfa": "http://cfa.org/Breeds/BreedsAB/Burmilla.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/burmilla",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "cspa",
+    "name_en": "California Spangled",
+    "name_ko": "캘리포니아 스팽글 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "호기심",
+      "지능적",
+      "충성스러움",
+      "사교적"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "특징적인 무늬",
+      "근육질 몸",
+      "짧은 털",
+      "큰 귀"
+    ],
+    "summary_ko": "캘리포니아 스팽글 고양이는 애정이 많고 사교적인 성격을 가진 고양이로, 주인과 함께 시간을 보내는 것을 즐깁니다. 이들은 매우 활발하며, 높은 곳에 앉아 아크로바틱한 기술을 보여주는 것을 좋아합니다.",
+    "potential_questions": [
+      "캘리포니아 스팽글 고양이는 어떤 성격을 가지고 있나요?",
+      "캘리포니아 스팽글 고양이는 얼마나 자주 운동해야 하나요?",
+      "캘리포니아 스팽글 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 7",
+      "life_span": "10 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/California_Spangled",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "ctif",
+    "name_en": "Chantilly-Tiffany",
+    "name_ko": "샹틸리-티파니 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "요구가 많음",
+      "상호작용적",
+      "충성스러움"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "부드러운 긴 털",
+      "둥근 얼굴",
+      "큰 눈",
+      "짧은 다리"
+    ],
+    "summary_ko": "샹틸리-티파니 고양이는 주인과의 교감을 좋아하며, 애정이 많은 성격을 가지고 있습니다. 이들은 조용히 주인의 곁에 머무르며, 여행 동반자로도 적합한 고양이입니다.",
+    "potential_questions": [
+      "샹틸리-티파니 고양이는 어떤 성격을 가지고 있나요?",
+      "샹틸리-티파니 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "샹틸리-티파니 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "14 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 5,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 5,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Chantilly-Tiffany",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "char",
+    "name_en": "Chartreux",
+    "name_ko": "샤르트뢰 고양이",
+    "origin_ko": "프랑스",
+    "personality_traits": [
+      "애정이 많음",
+      "충성스러움",
+      "지능적",
+      "사교적",
+      "활발함"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "짧은 털",
+      "근육질 몸",
+      "주황색 눈",
+      "특유의 미소"
+    ],
+    "summary_ko": "샤르트뢰 고양이는 프랑스에서 유래된 희귀한 품종으로, 애정이 많고 충성스러운 성격을 가지고 있습니다. 이들은 조용하지만 소통을 즐기며, 주인과 함께 시간을 보내는 것을 좋아합니다.",
+    "potential_questions": [
+      "샤르트뢰 고양이는 어떤 특징이 있나요?",
+      "샤르트뢰 고양이는 얼마나 자주 운동해야 하나요?",
+      "샤르트뢰 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 2,
+      "grooming": 1,
+      "health_issues": 2,
+      "intelligence": 4,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Chartreux",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/Chartreux.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/chartreux",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/chartreux"
+    }
+  },
+  {
+    "breed_id": "chau",
+    "name_en": "Chausie",
+    "name_ko": "차우시",
+    "origin_ko": "이집트",
+    "personality_traits": [
+      "애정이 많음",
+      "지능적임",
+      "장난기 많음",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "야생적인 외모",
+      "강한 체격",
+      "긴 다리"
+    ],
+    "summary_ko": "차우시는 이집트에서 유래된 고양이 품종으로, 야생의 매력을 지니면서도 집에서 기르기 좋은 성격을 가지고 있습니다. 이 고양이는 매우 장난기 많고, 넓은 공간에서 사냥 본능을 발휘할 수 있는 환경이 필요합니다.",
+    "potential_questions": [
+      "차우시는 어떤 성격을 가지고 있나요?",
+      "차우시 고양이를 기르기 위해 필요한 공간은 얼마인가요?",
+      "차우시의 건강 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Chausie",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "chee",
+    "name_en": "Cheetoh",
+    "name_ko": "치토",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "부드러움",
+      "지능적임",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "강한 체격",
+      "짧은 털",
+      "활발한 움직임"
+    ],
+    "summary_ko": "치토는 미국에서 유래된 고양이 품종으로, 사람과의 유대감이 강하고 빠르게 배우는 지능을 지니고 있습니다. 이들은 놀이를 즐기며 집안 곳곳을 뛰어다니는 활발한 성격을 가지고 있습니다.",
+    "potential_questions": [
+      "치토 고양이는 어떤 특징이 있나요?",
+      "치토를 기르기 위한 적절한 환경은 무엇인가요?",
+      "치토의 건강 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Bengal_cat",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "csho",
+    "name_en": "Colorpoint Shorthair",
+    "name_ko": "컬러포인트 쇼트헤어",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "지능적임",
+      "장난기 많음",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "짧은 털",
+      "다양한 색상",
+      "우아한 외모"
+    ],
+    "summary_ko": "컬러포인트 쇼트헤어는 미국에서 유래된 고양이 품종으로, 주인에게 매우 애정이 깊고 충성스러운 성격을 가지고 있습니다. 이들은 주인의 기분에 민감하며, 항상 곁에 있고 싶어하는 경향이 있습니다.",
+    "potential_questions": [
+      "컬러포인트 쇼트헤어의 특징은 무엇인가요?",
+      "이 고양이는 어떤 환경에서 잘 자라나요?",
+      "컬러포인트 쇼트헤어의 건강 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 3,
+      "affection_level": 4,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 4,
+      "grooming": 2,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 2,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Colorpoint_Shorthair",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/ColorpointShorthair.aspx",
+      "vetstreet": null,
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/colorpoint-shorthair"
+    }
+  },
+  {
+    "breed_id": "crex",
+    "name_en": "Cornish Rex",
+    "name_ko": "코니시 렉스",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "애정이 많음",
+      "지능적임",
+      "활발함",
+      "호기심 많음",
+      "장난기 많음"
+    ],
+    "physical_traits": [
+      "짧은 털",
+      "부드러운 털",
+      "작은 체구"
+    ],
+    "summary_ko": "코니시 렉스는 영국에서 유래된 고양이 품종으로, 사람을 사랑하고 항상 곁에 있으려는 성격을 가지고 있습니다. 이들은 평생 동안 장난기 많은 성격을 유지하며, 사람과의 상호작용을 즐깁니다.",
+    "potential_questions": [
+      "코니시 렉스의 특징은 무엇인가요?",
+      "이 고양이는 어떤 환경에서 잘 자라나요?",
+      "코니시 렉스의 건강 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 4",
+      "life_span": "11 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Cornish_Rex",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/CornishRex.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/cornish-rex",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/cornish-rex"
+    }
+  },
+  {
+    "breed_id": "cymr",
+    "name_en": "Cymric",
+    "name_ko": "킴릭",
+    "origin_ko": "캐나다",
+    "personality_traits": [
+      "온화함",
+      "충성스러움",
+      "지능적임",
+      "장난기 많음"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "부드러운 털",
+      "강한 체격"
+    ],
+    "summary_ko": "킴릭은 캐나다에서 유래된 고양이 품종으로, 온화하고 사랑스러운 성격을 가지고 있습니다. 이들은 사람과의 유대감을 중요시하며, 지능이 높아 다양한 행동을 할 수 있습니다.",
+    "potential_questions": [
+      "킴릭 고양이는 어떤 성격을 가지고 있나요?",
+      "킴릭을 기르기 위한 적절한 환경은 무엇인가요?",
+      "킴릭의 건강 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 6",
+      "life_span": "8 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 3,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 5,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Cymric_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/cymric",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "cypr",
+    "name_en": "Cyprus",
+    "name_ko": "키프로스 고양이",
+    "origin_ko": "키프로스",
+    "personality_traits": [
+      "애정이 많음",
+      "사교적임",
+      "호기심이 많음"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "짧은 털",
+      "강한 가족 유대"
+    ],
+    "summary_ko": "키프로스 고양이는 애정이 많고 사교적인 성격을 가진 고양이로, 가족과의 강한 유대감을 형성합니다. 이들은 호기심이 많고 주변 환경에 적극적으로 참여하며, 비교적 활동적이지 않아 편안한 동반자로 적합합니다.",
+    "potential_questions": [
+      "키프로스 고양이는 어떤 성격을 가지고 있나요?",
+      "키프로스 고양이는 어떤 환경에서 잘 지내나요?",
+      "키프로스 고양이의 건강 문제는 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 4,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Cyprus_cat",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "drex",
+    "name_en": "Devon Rex",
+    "name_ko": "데본 렉스",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "상호작용이 많음",
+      "장난기 많음",
+      "충성스러움",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "짧고 곱슬거리는 털",
+      "큰 눈",
+      "특이한 머리 모양"
+    ],
+    "summary_ko": "데본 렉스는 영국에서 유래된 고양이 품종으로, 짧고 곱슬거리는 털과 독특한 외모로 유명합니다. 이들은 매우 상호작용을 좋아하며, 사람들과의 관계를 중시하는 사교적인 성격을 가지고 있습니다.",
+    "potential_questions": [
+      "데본 렉스는 어떤 특징이 있나요?",
+      "데본 렉스는 어떤 성격을 가지고 있나요?",
+      "데본 렉스의 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Devon_Rex",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/DevonRex.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/devon-rex",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/devon-rex"
+    }
+  },
+  {
+    "breed_id": "dons",
+    "name_en": "Donskoy",
+    "name_ko": "돈스코이",
+    "origin_ko": "러시아",
+    "personality_traits": [
+      "장난기 많음",
+      "애정이 많음",
+      "충성스러움",
+      "사교적임"
+    ],
+    "physical_traits": [
+      "털이 없음",
+      "중간 크기",
+      "부드러운 피부"
+    ],
+    "summary_ko": "돈스코이는 러시아에서 유래된 털 없는 고양이 품종으로, 애정이 많고 사교적인 성격을 가지고 있습니다. 이들은 다른 애완동물과 잘 어울리며, 많은 관심과 상호작용을 요구합니다.",
+    "potential_questions": [
+      "돈스코이는 어떤 성격을 가지고 있나요?",
+      "돈스코이의 털 관리 방법은 무엇인가요?",
+      "돈스코이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 6",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 4,
+      "affection_level": 4,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 4,
+      "grooming": 2,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 1,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 2
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Donskoy_cat",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "lihu",
+    "name_en": "Dragon Li",
+    "name_ko": "드래곤 리",
+    "origin_ko": "중국",
+    "personality_traits": [
+      "지능적임",
+      "친절함",
+      "온화함",
+      "충성스러움"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "짧은 털",
+      "활발함"
+    ],
+    "summary_ko": "드래곤 리는 중국에서 유래된 고양이 품종으로, 지능적이고 온화한 성격을 가지고 있습니다. 이들은 충성스럽고 사냥 본능이 뛰어나며, 사람들과의 관계에서도 부드러운 태도를 보입니다.",
+    "potential_questions": [
+      "드래곤 리는 어떤 성격을 가지고 있나요?",
+      "드래곤 리의 특징은 무엇인가요?",
+      "드래곤 리는 어떤 환경에서 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 6",
+      "life_span": "12 - 15",
+      "indoor": 1,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 3,
+      "affection_level": 3,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Dragon_Li",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/li-hua",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "emau",
+    "name_en": "Egyptian Mau",
+    "name_ko": "이집션 마우",
+    "origin_ko": "이집트",
+    "personality_traits": [
+      "민첩함",
+      "의존적임",
+      "온화함",
+      "지능적임"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "점박이 털",
+      "우아한 외모"
+    ],
+    "summary_ko": "이집션 마우는 이집트에서 유래된 고양이 품종으로, 자연적으로 점박이 털을 가진 독특한 외모를 가지고 있습니다. 이들은 온화하고 지능적이며, 사람들에게 애정과 관심을 요구하는 성격을 지니고 있습니다.",
+    "potential_questions": [
+      "이집션 마우는 어떤 성격을 가지고 있나요?",
+      "이집션 마우의 털 관리 방법은 무엇인가요?",
+      "이집션 마우는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "18 - 20",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 2,
+      "affection_level": 5,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 4,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 2,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Egyptian_Mau",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/EgyptianMau.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/egyptian-mau",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/egyptian-mau"
+    }
+  },
+  {
+    "breed_id": "ebur",
+    "name_en": "European Burmese",
+    "name_ko": "유럽 버마 고양이",
+    "origin_ko": "버마",
+    "personality_traits": [
+      "사랑스러운",
+      "충성스러운",
+      "호기심 많은"
+    ],
+    "physical_traits": [
+      "슬림한 체형",
+      "짧은 털",
+      "큰 눈"
+    ],
+    "summary_ko": "유럽 버마 고양이는 매우 사랑스럽고 지능적이며 충성스러운 고양이입니다. 이들은 사람과의 동반자 관계를 중시하며, 호기심이 많고 놀이를 즐깁니다.",
+    "potential_questions": [
+      "유럽 버마 고양이는 어떤 성격을 가지고 있나요?",
+      "유럽 버마 고양이의 털 관리 방법은?",
+      "유럽 버마 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 4,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 4
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Burmese_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/EuropeanBurmese.aspx",
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "esho",
+    "name_en": "Exotic Shorthair",
+    "name_ko": "엑조틱 쇼트헤어",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "사랑스러운",
+      "조용한",
+      "친근한"
+    ],
+    "physical_traits": [
+      "짧고 밀도가 높은 털",
+      "둥근 얼굴",
+      "큰 눈"
+    ],
+    "summary_ko": "엑조틱 쇼트헤어는 페르시안과 유사한 외모를 가진 부드럽고 친근한 고양이입니다. 이들은 조용하고 평화로운 성격을 가지고 있으며, 사람들과의 유대감을 중요시합니다.",
+    "potential_questions": [
+      "엑조틱 쇼트헤어는 어떤 성격인가요?",
+      "엑조틱 쇼트헤어의 건강 문제는 무엇인가요?",
+      "엑조틱 쇼트헤어는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 2,
+      "social_needs": 4,
+      "stranger_friendly": 2,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Exotic_Shorthair",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/Exotic.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/exotic-shorthair",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/exotic-shorthair"
+    }
+  },
+  {
+    "breed_id": "hbro",
+    "name_en": "Havana Brown",
+    "name_ko": "하바나 브라운",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "사랑스러운",
+      "호기심 많은",
+      "친근한"
+    ],
+    "physical_traits": [
+      "짙은 갈색 털",
+      "큰 눈",
+      "슬림한 체형"
+    ],
+    "summary_ko": "하바나 브라운은 사람과의 유대감을 중시하며, 호기심이 많고 놀이를 즐기는 고양이입니다. 이들은 매우 친근하고 사람들과의 상호작용을 좋아합니다.",
+    "potential_questions": [
+      "하바나 브라운의 성격은 어떤가요?",
+      "하바나 브라운은 어떤 털 관리가 필요한가요?",
+      "하바나 브라운은 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Havana_Brown",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/HavanaBrown.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/havana-brown",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/havana-brown"
+    }
+  },
+  {
+    "breed_id": "hima",
+    "name_en": "Himalayan",
+    "name_ko": "히말라얀",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "온순한",
+      "지적인",
+      "사회적인"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "파란 눈",
+      "둥근 얼굴"
+    ],
+    "summary_ko": "히말라얀은 온순하고 헌신적인 성격을 가진 고양이로, 조용한 환경을 선호합니다. 이들은 사람과의 유대감을 중요시하며, 다양한 장난감을 가지고 노는 것을 좋아합니다.",
+    "potential_questions": [
+      "히말라얀의 성격은 어떤가요?",
+      "히말라얀은 어떤 털 관리가 필요한가요?",
+      "히말라얀은 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "9 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 2,
+      "dog_friendly": 2,
+      "energy_level": 1,
+      "grooming": 5,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 4,
+      "social_needs": 4,
+      "stranger_friendly": 2,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Himalayan_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/himalayan",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/himalayan"
+    }
+  },
+  {
+    "breed_id": "jbob",
+    "name_en": "Japanese Bobtail",
+    "name_ko": "일본 밥테일",
+    "origin_ko": "일본",
+    "personality_traits": [
+      "활발한",
+      "지적인",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "슬림한 체형",
+      "큰 눈"
+    ],
+    "summary_ko": "일본 밥테일은 매우 활발하고 사랑스러운 고양이로, 사람과의 놀이를 즐깁니다. 이들은 지능이 높고 사교적이며, 사람들과의 상호작용을 좋아합니다.",
+    "potential_questions": [
+      "일본 밥테일의 성격은 어떤가요?",
+      "일본 밥테일은 어떤 털 관리가 필요한가요?",
+      "일본 밥테일은 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "14 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Japanese_Bobtail",
+      "cfa": "http://cfa.org/Breeds/BreedsCJ/JapaneseBobtail.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/japanese-bobtail",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/japanese-bobtail"
+    }
+  },
+  {
+    "breed_id": "java",
+    "name_en": "Javanese",
+    "name_ko": "자바 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "활동적",
+      "헌신적",
+      "지능적",
+      "장난기 많은"
+    ],
+    "physical_traits": [
+      "중간 길이의 털",
+      "비전통적인 포인트 색상",
+      "날렵한 체형"
+    ],
+    "summary_ko": "자바 고양이는 미국에서 유래된 품종으로, 활동적이고 지능적이며 장난기 많은 성격을 가지고 있습니다. 이들은 주변을 탐색하는 것을 좋아하며, 사람의 행동을 모방하려는 경향이 있습니다.",
+    "potential_questions": [
+      "자바 고양이는 어떤 성격을 가지고 있나요?",
+      "자바 고양이의 털 관리 방법은 무엇인가요?",
+      "자바 고양이는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "10 - 12",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 1,
+      "adaptability": 4,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 2,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Javanese_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/javanese",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/javanese"
+    }
+  },
+  {
+    "breed_id": "khao",
+    "name_en": "Khao Manee",
+    "name_ko": "카오 마니",
+    "origin_ko": "태국",
+    "personality_traits": [
+      "차분한",
+      "사교적인",
+      "장난기 많은"
+    ],
+    "physical_traits": [
+      "짧은 털",
+      "완전한 흰색",
+      "다이아몬드 눈"
+    ],
+    "summary_ko": "카오 마니는 태국에서 유래된 드문 품종으로, 차분하고 사교적인 성격을 지닌 고양이입니다. 이들은 매우 지능적이며, 사람과의 유대감을 중요시합니다.",
+    "potential_questions": [
+      "카오 마니 고양이는 어떤 특징이 있나요?",
+      "카오 마니는 다른 동물과 잘 지내나요?",
+      "카오 마니의 평균 수명은 얼마인가요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 6",
+      "life_span": "10 - 12",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 4,
+      "affection_level": 4,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 4,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Khao_Manee",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/KhaoManee.aspx",
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "kora",
+    "name_en": "Korat",
+    "name_ko": "코랏 고양이",
+    "origin_ko": "태국",
+    "personality_traits": [
+      "활동적",
+      "충성스러운",
+      "지능적"
+    ],
+    "physical_traits": [
+      "은빛이 도는 파란색 털",
+      "하트 모양의 머리",
+      "큰 녹색 눈"
+    ],
+    "summary_ko": "코랏 고양이는 태국에서 유래된 고양이 품종으로, 활동적이고 충성스러운 성격을 가지고 있습니다. 이들은 사람과의 강한 유대감을 형성하며, 매우 지능적이고 표현력이 풍부합니다.",
+    "potential_questions": [
+      "코랏 고양이는 어떤 성격을 가지고 있나요?",
+      "코랏 고양이의 털 관리 방법은 무엇인가요?",
+      "코랏 고양이는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 2,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Korat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Korat.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/korat",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/korat"
+    }
+  },
+  {
+    "breed_id": "kuri",
+    "name_en": "Kurilian",
+    "name_ko": "쿠릴리안 고양이",
+    "origin_ko": "러시아",
+    "personality_traits": [
+      "독립적인",
+      "지능적인",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "튼튼한 체형",
+      "부드러운 털"
+    ],
+    "summary_ko": "쿠릴리안 고양이는 러시아에서 유래된 품종으로, 독립적이고 지능적이며 사교적인 성격을 가지고 있습니다. 이들은 사람과의 유대감을 중요시하며, 매우 온순한 성격을 지니고 있습니다.",
+    "potential_questions": [
+      "쿠릴리안 고양이는 어떤 특징이 있나요?",
+      "쿠릴리안 고양이는 훈련이 잘 되나요?",
+      "쿠릴리안 고양이의 평균 수명은 얼마인가요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "15 - 20",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 5,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 2,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Kurilian",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/kurilian-bobtail",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "lape",
+    "name_en": "LaPerm",
+    "name_ko": "라펌 고양이",
+    "origin_ko": "태국",
+    "personality_traits": [
+      "애정이 많은",
+      "친근한",
+      "조용한"
+    ],
+    "physical_traits": [
+      "곱슬 털",
+      "다양한 색상과 패턴",
+      "중간 크기"
+    ],
+    "summary_ko": "라펌 고양이는 태국에서 유래된 품종으로, 애정이 많고 친근한 성격을 지니고 있습니다. 이들은 활동적이면서도 사람의 무릎에 앉아 있는 것을 좋아하는 고양이입니다.",
+    "potential_questions": [
+      "라펌 고양이는 어떤 성격을 가지고 있나요?",
+      "라펌 고양이의 털 관리 방법은 무엇인가요?",
+      "라펌 고양이는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/LaPerm",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/LaPerm.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/laperm",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/laperm"
+    }
+  },
+  {
+    "breed_id": "mcoo",
+    "name_en": "Maine Coon",
+    "name_ko": "메인 쿤",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "적응력 강함",
+      "지능적",
+      "사랑스러움",
+      "온화함",
+      "독립적"
+    ],
+    "physical_traits": [
+      "큰 체구",
+      "긴 털",
+      "둥근 얼굴",
+      "부드러운 털",
+      "긴 꼬리"
+    ],
+    "summary_ko": "메인 쿤은 미국 메인주에서 유래된 대형 고양이 품종으로, '온화한 거인'으로 알려져 있습니다. 이 고양이는 사람들과 잘 어울리며, 물을 좋아하고 수영을 잘하는 특징이 있습니다.",
+    "potential_questions": [
+      "메인 쿤의 평균 수명은 얼마인가요?",
+      "메인 쿤은 어떤 성격을 가지고 있나요?",
+      "메인 쿤의 털 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 8",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Maine_Coon",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/MaineCoon.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/maine-coon",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/maine-coon"
+    }
+  },
+  {
+    "breed_id": "mala",
+    "name_en": "Malayan",
+    "name_ko": "말레이안",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "애정이 많음",
+      "상호작용을 좋아함",
+      "장난기 많음",
+      "사교적"
+    ],
+    "physical_traits": [
+      "중간 크기",
+      "부드러운 털",
+      "다양한 색상",
+      "활발한 움직임"
+    ],
+    "summary_ko": "말레이안 고양이는 애정이 많고 사교적인 성격을 가진 고양이로, 사람들과의 상호작용을 즐깁니다. 이들은 장난을 좋아하며, 여행을 즐기는 특징이 있습니다.",
+    "potential_questions": [
+      "말레이안 고양이는 어떤 성격을 가지고 있나요?",
+      "말레이안 고양이의 평균 수명은 얼마인가요?",
+      "말레이안 고양이는 어떤 털 관리가 필요한가요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "12 - 18",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Asian_cat",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "manx",
+    "name_en": "Manx",
+    "name_ko": "맹크스 고양이",
+    "origin_ko": "맨 섬",
+    "personality_traits": [
+      "온화함",
+      "지능적",
+      "충성스러움",
+      "장난기 많음",
+      "사교적"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "둥근 머리",
+      "긴 뒷다리",
+      "부드러운 털"
+    ],
+    "summary_ko": "맹크스 고양이는 맨 섬에서 유래된 고양이로, 짧은 꼬리가 특징입니다. 이들은 온화하고 사랑스러운 성격을 가지고 있으며, 사람들과 함께하는 것을 좋아합니다.",
+    "potential_questions": [
+      "맹크스 고양이의 평균 수명은 얼마인가요?",
+      "맹크스 고양이는 어떤 성격을 가지고 있나요?",
+      "맹크스 고양이의 털 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 6",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 5,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Manx_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Manx.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/manx",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/manx"
+    }
+  },
+  {
+    "breed_id": "munc",
+    "name_en": "Munchkin",
+    "name_ko": "먼치킨",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "민첩함",
+      "온화함",
+      "지능적",
+      "장난기 많음"
+    ],
+    "physical_traits": [
+      "짧은 다리",
+      "활발한 움직임",
+      "부드러운 털",
+      "중간 크기"
+    ],
+    "summary_ko": "먼치킨 고양이는 짧은 다리를 가진 고양이로, 활발하고 장난기 많은 성격을 가지고 있습니다. 이들은 사람들과의 상호작용을 즐기며, 뛰어난 민첩성을 자랑합니다.",
+    "potential_questions": [
+      "먼치킨 고양이의 평균 수명은 얼마인가요?",
+      "먼치킨 고양이는 어떤 성격을 가지고 있나요?",
+      "먼치킨 고양이의 털 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 4",
+      "life_span": "10 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 2,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Munchkin_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/munchkin",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "nebe",
+    "name_en": "Nebelung",
+    "name_ko": "네벨룽",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "온화함",
+      "조용함",
+      "수줍음",
+      "장난기 많음"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "녹색 눈",
+      "슬림한 체형",
+      "부드러운 털"
+    ],
+    "summary_ko": "네벨룽 고양이는 조용하고 수줍은 성격을 가진 고양이로, 높은 곳에서 사람들을 관찰하는 것을 좋아합니다. 이들은 부드러운 긴 털과 아름다운 녹색 눈을 가지고 있습니다.",
+    "potential_questions": [
+      "네벨룽 고양이의 평균 수명은 얼마인가요?",
+      "네벨룽 고양이는 어떤 성격을 가지고 있나요?",
+      "네벨룽 고양이의 털 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "11 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 4,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Nebelung",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "norw",
+    "name_en": "Norwegian Forest Cat",
+    "name_ko": "노르웨이 숲 고양이",
+    "origin_ko": "노르웨이",
+    "personality_traits": [
+      "사교적",
+      "활발한",
+      "호기심 많은",
+      "사랑스러운"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "튼튼한 몸",
+      "부시리한 꼬리",
+      "긴 다리"
+    ],
+    "summary_ko": "노르웨이 숲 고양이는 사랑스럽고 사교적인 성격을 가진 고양이로, 주인과의 유대감을 중요시합니다. 이 고양이는 뛰어난 사냥 본능을 가지고 있으며, 활동적이고 호기심이 많아 다양한 장난감을 쫓는 것을 좋아합니다.",
+    "potential_questions": [
+      "노르웨이 숲 고양이는 어떤 성격을 가지고 있나요?",
+      "노르웨이 숲 고양이의 털 관리 방법은 무엇인가요?",
+      "노르웨이 숲 고양이는 얼마나 자주 운동해야 하나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 3,
+      "intelligence": 4,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Norwegian_Forest_Cat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/NorwegianForestCat.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/norwegian-forest-cat",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/norwegian-forest-cat"
+    }
+  },
+  {
+    "breed_id": "ocic",
+    "name_en": "Ocicat",
+    "name_ko": "오시캣",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "활발한",
+      "친근한",
+      "지능적인",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "고양이와 유사한 외모",
+      "짧은 털",
+      "근육질의 몸",
+      "큰 귀"
+    ],
+    "summary_ko": "오시캣은 야생 고양이를 닮은 외모를 가진 전적으로 가정에서 기르는 고양이입니다. 이 고양이는 지능적이고 사교적이며, 주인에게 충성스럽고 다양한 명령을 수행할 수 있는 능력을 가지고 있습니다.",
+    "potential_questions": [
+      "오시캣은 어떤 훈련이 가능한가요?",
+      "오시캣의 성격은 어떤가요?",
+      "오시캣은 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Ocicat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Ocicat.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/ocicat",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/ocicat"
+    }
+  },
+  {
+    "breed_id": "orie",
+    "name_en": "Oriental",
+    "name_ko": "오리엔탈 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "에너지가 넘치는",
+      "사랑스러운",
+      "지능적인",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "슬림한 몸",
+      "아몬드 모양의 눈",
+      "큰 귀",
+      "다양한 털 색상"
+    ],
+    "summary_ko": "오리엔탈 고양이는 사람과의 유대감을 중요시하며, 매우 사교적이고 지능적인 성격을 가지고 있습니다. 이들은 다양한 털 색상과 패턴을 가지고 있으며, 활발한 성격 덕분에 성인이 되어도 놀이를 즐깁니다.",
+    "potential_questions": [
+      "오리엔탈 고양이는 어떤 털 색상이 있나요?",
+      "오리엔탈 고양이는 얼마나 활동적인가요?",
+      "오리엔탈 고양이는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Oriental_Shorthair",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Oriental.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/oriental",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/oriental"
+    }
+  },
+  {
+    "breed_id": "pers",
+    "name_en": "Persian",
+    "name_ko": "페르시안 고양이",
+    "origin_ko": "이란 (페르시아)",
+    "personality_traits": [
+      "애정이 많은",
+      "조용한",
+      "온화한",
+      "충성스러운"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "둥근 얼굴",
+      "작은 코",
+      "짧은 다리"
+    ],
+    "summary_ko": "페르시안 고양이는 부드럽고 온화한 성격을 가진 고양이로, 가족과 아이들과 잘 어울립니다. 이들은 집에서 편안하게 지내는 것을 좋아하며, 조용한 환경을 선호합니다.",
+    "potential_questions": [
+      "페르시안 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "페르시안 고양이는 어떤 성격을 가지고 있나요?",
+      "페르시안 고양이는 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 6",
+      "life_span": "14 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 2,
+      "dog_friendly": 2,
+      "energy_level": 1,
+      "grooming": 5,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 4,
+      "social_needs": 4,
+      "stranger_friendly": 2,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Persian_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Persian.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/persian",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/persian"
+    }
+  },
+  {
+    "breed_id": "pixi",
+    "name_en": "Pixie-bob",
+    "name_ko": "픽시밥",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많은",
+      "사교적인",
+      "지능적인",
+      "충성스러운"
+    ],
+    "physical_traits": [
+      "짧은 꼬리",
+      "근육질의 몸",
+      "부드러운 털",
+      "큰 발"
+    ],
+    "summary_ko": "픽시밥은 가족과의 유대감을 중요시하며, 애정이 많은 성격을 가진 고양이입니다. 이들은 아이들과 잘 어울리며, 충성스럽고 지능적인 성격 덕분에 훌륭한 반려동물이 됩니다.",
+    "potential_questions": [
+      "픽시밥은 어떤 성격을 가지고 있나요?",
+      "픽시밥은 얼마나 자주 운동해야 하나요?",
+      "픽시밥은 다른 애완동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 8",
+      "life_span": "13 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 1,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Pixie-bob",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/pixiebob",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "raga",
+    "name_en": "Ragamuffin",
+    "name_ko": "라가머핀 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "친근함",
+      "온화함",
+      "차분함"
+    ],
+    "physical_traits": [
+      "두꺼운 털",
+      "중간 크기",
+      "둥근 얼굴"
+    ],
+    "summary_ko": "라가머핀 고양이는 차분하고 온화한 성격을 가진 고양이로, 가족 구성원 모두와 잘 어울립니다. 이들은 아파트 생활에 적합하며, 아이들과도 잘 지내는 인내심 있는 동반자입니다.",
+    "potential_questions": [
+      "라가머핀 고양이는 어떤 성격을 가지고 있나요?",
+      "라가머핀 고양이는 어떤 털 색깔이 있나요?",
+      "라가머핀 고양이는 얼마나 자주 털을 빗어줘야 하나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 9",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 3,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Ragamuffin_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Ragamuffin.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/ragamuffin",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/ragamuffin"
+    }
+  },
+  {
+    "breed_id": "ragd",
+    "name_en": "Ragdoll",
+    "name_ko": "래그돌 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많음",
+      "친근함",
+      "온화함",
+      "조용함",
+      "수용적임"
+    ],
+    "physical_traits": [
+      "큰 파란 눈",
+      "반긴 털",
+      "무거운 체형"
+    ],
+    "summary_ko": "래그돌 고양이는 부드럽고 온화한 성격으로, 사람을 매우 사랑하며 주인을 따라다니는 경향이 있습니다. 이들은 무릎에 앉거나 침대에 함께 자는 것을 좋아하는 대표적인 무릎 고양이입니다.",
+    "potential_questions": [
+      "래그돌 고양이는 얼마나 큰가요?",
+      "래그돌 고양이는 어떤 털 관리가 필요한가요?",
+      "래그돌 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 9",
+      "life_span": "12 - 17",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 3,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Ragdoll",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/Ragdoll.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/ragdoll",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/ragdoll"
+    }
+  },
+  {
+    "breed_id": "rblu",
+    "name_en": "Russian Blue",
+    "name_ko": "러시안 블루 고양이",
+    "origin_ko": "러시아",
+    "personality_traits": [
+      "활발함",
+      "의존적임",
+      "온화함",
+      "지능적임",
+      "충성스러움"
+    ],
+    "physical_traits": [
+      "짧고 밀도가 높은 털",
+      "파란색 눈",
+      "슬림한 체형"
+    ],
+    "summary_ko": "러시안 블루 고양이는 사랑스럽고 조용한 성격을 가진 고양이로, 소음이 많은 환경을 싫어합니다. 이들은 주인과 깊은 유대감을 형성하며, 다른 애완동물과도 잘 어울립니다.",
+    "potential_questions": [
+      "러시안 블루 고양이는 어떤 성격인가요?",
+      "러시안 블루 고양이는 얼마나 오래 살 수 있나요?",
+      "러시안 블루 고양이는 털 알레르기 유발이 되나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "10 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 3,
+      "affection_level": 3,
+      "child_friendly": 3,
+      "dog_friendly": 3,
+      "energy_level": 3,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 1,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Russian_Blue",
+      "cfa": "http://cfa.org/Breeds/BreedsKthruR/RussianBlue.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/russian-blue-nebelung",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/russian-blue"
+    }
+  },
+  {
+    "breed_id": "sava",
+    "name_en": "Savannah",
+    "name_ko": "사바나 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "호기심이 많음",
+      "사교적임",
+      "지능적임",
+      "충성스러움",
+      "모험심이 강함"
+    ],
+    "physical_traits": [
+      "큰 귀",
+      "스팟이 있는 털",
+      "슬림한 체형"
+    ],
+    "summary_ko": "사바나 고양이는 개와 같은 성격을 가진 고양이로, 사회적 상호작용을 적극적으로 추구합니다. 이들은 가족에게 깊은 충성을 보이며, 외부 환경에서도 활발하게 활동합니다.",
+    "potential_questions": [
+      "사바나 고양이는 어떤 성격을 가지고 있나요?",
+      "사바나 고양이는 얼마나 큰가요?",
+      "사바나 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 11",
+      "life_span": "17 - 20",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Savannah_cat",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/savannah",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "sfol",
+    "name_en": "Scottish Fold",
+    "name_ko": "스코티시 폴드 고양이",
+    "origin_ko": "영국",
+    "personality_traits": [
+      "애정이 많음",
+      "지능적임",
+      "충성스러움",
+      "사교적임",
+      "사랑스러움"
+    ],
+    "physical_traits": [
+      "접힌 귀",
+      "둥근 얼굴",
+      "부드러운 털"
+    ],
+    "summary_ko": "스코티시 폴드 고양이는 귀여운 외모와 사랑스러운 성격을 가진 고양이로, 가족과 잘 어울리며 쉽게 기를 수 있습니다. 이들은 '부처 자세'로 자는 것을 좋아하는 특징이 있습니다.",
+    "potential_questions": [
+      "스코티시 폴드 고양이는 어떤 특징이 있나요?",
+      "스코티시 폴드 고양이는 건강 문제는 없나요?",
+      "스코티시 폴드 고양이는 얼마나 오래 살 수 있나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "11 - 14",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 1,
+      "health_issues": 4,
+      "intelligence": 3,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Scottish_Fold",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/ScottishFold.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/scottish-fold-highland-fold",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/scottish-fold"
+    }
+  },
+  {
+    "breed_id": "srex",
+    "name_en": "Selkirk Rex",
+    "name_ko": "셀커크 렉스",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "활발한",
+      "애정이 많은",
+      "의존적인",
+      "온화한",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "곱슬 털",
+      "두꺼운 털",
+      "중간 크기",
+      "둥근 얼굴",
+      "짧은 다리"
+    ],
+    "summary_ko": "셀커크 렉스는 1980년대 후반 미국에서 개발된 고양이 품종으로, 곱슬거리는 털이 특징입니다. 이 품종은 온화하고 사교적이며 애정이 많아 사람들과의 교감을 즐깁니다.",
+    "potential_questions": [
+      "셀커크 렉스는 어떤 성격을 가지고 있나요?",
+      "셀커크 렉스의 털 관리 방법은 무엇인가요?",
+      "셀커크 렉스는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "14 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 4,
+      "intelligence": 3,
+      "shedding_level": 1,
+      "social_needs": 3,
+      "stranger_friendly": 3,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Selkirk_Rex",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/SelkirkRex.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/selkirk-rex",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/selkirk-rex"
+    }
+  },
+  {
+    "breed_id": "siam",
+    "name_en": "Siamese",
+    "name_ko": "샴 고양이",
+    "origin_ko": "태국",
+    "personality_traits": [
+      "활발한",
+      "영리한",
+      "사교적인",
+      "사랑스러운",
+      "에너지가 넘치는"
+    ],
+    "physical_traits": [
+      "파란 아몬드형 눈",
+      "삼각형 머리",
+      "큰 귀",
+      "슬림한 몸매",
+      "색점 무늬"
+    ],
+    "summary_ko": "샴 고양이는 태국에서 유래된 고양이 품종으로, 독특한 색점 무늬와 파란 눈이 특징입니다. 이들은 매우 사교적이고 애정이 많아 사람들과의 교감을 즐깁니다.",
+    "potential_questions": [
+      "샴 고양이는 어떤 특징이 있나요?",
+      "샴 고양이는 얼마나 오래 살까요?",
+      "샴 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 2,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Siamese_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Siamese.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/siamese",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/siamese"
+    }
+  },
+  {
+    "breed_id": "sibe",
+    "name_en": "Siberian",
+    "name_ko": "시베리안 고양이",
+    "origin_ko": "러시아",
+    "personality_traits": [
+      "호기심 많은",
+      "지능적인",
+      "충성스러운",
+      "사랑스러운",
+      "활발한"
+    ],
+    "physical_traits": [
+      "중간에서 큰 체구",
+      "근육질의 몸",
+      "푸짐한 꼬리",
+      "두꺼운 털",
+      "둥근 얼굴"
+    ],
+    "summary_ko": "시베리안 고양이는 러시아의 자연 품종으로, 강한 체력과 애정 어린 성격을 가지고 있습니다. 이들은 실내에서 행복하게 지내며, 뛰어난 점프 능력을 자랑합니다.",
+    "potential_questions": [
+      "시베리안 고양이는 어떤 성격을 가지고 있나요?",
+      "시베리안 고양이는 털 관리가 필요한가요?",
+      "시베리안 고양이는 얼마나 오래 살까요?"
+    ],
+    "stats": {
+      "weight_metric": "4 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 2,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 3,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Siberian_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Siberian.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/siberian",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/siberian"
+    }
+  },
+  {
+    "breed_id": "sing",
+    "name_en": "Singapura",
+    "name_ko": "싱가푸라 고양이",
+    "origin_ko": "싱가포르",
+    "personality_traits": [
+      "애정이 많은",
+      "호기심 많은",
+      "온화한",
+      "지능적인",
+      "활발한"
+    ],
+    "physical_traits": [
+      "작은 체구",
+      "큰 눈과 귀",
+      "짧은 꼬리",
+      "털이 고르게 분포된",
+      "부드러운 털"
+    ],
+    "summary_ko": "싱가푸라 고양이는 싱가포르에서 유래된 가장 작은 고양이 품종으로, 큰 눈과 귀가 특징입니다. 이들은 매우 활동적이고 애정이 많아 가족과의 교감을 즐깁니다.",
+    "potential_questions": [
+      "싱가푸라 고양이는 어떤 성격을 가지고 있나요?",
+      "싱가푸라 고양이는 얼마나 자주 털을 관리해야 하나요?",
+      "싱가푸라 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 4",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Singapura_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Singapura.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/singapura",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/singapura"
+    }
+  },
+  {
+    "breed_id": "snow",
+    "name_en": "Snowshoe",
+    "name_ko": "스노우슈 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "애정이 많은",
+      "사교적인",
+      "지능적인",
+      "온화한"
+    ],
+    "physical_traits": [
+      "짧은 털",
+      "이색적인 색상",
+      "중간 크기",
+      "흰 발",
+      "부드러운 털"
+    ],
+    "summary_ko": "스노우슈 고양이는 1960년대 미국에서 유래된 희귀한 품종으로, 독특한 색상과 흰 발이 특징입니다. 이들은 사람들과의 교감을 즐기며, 가족과 함께하는 것을 좋아합니다.",
+    "potential_questions": [
+      "스노우슈 고양이는 어떤 성격을 가지고 있나요?",
+      "스노우슈 고양이는 얼마나 오래 살까요?",
+      "스노우슈 고양이는 다른 고양이와 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "14 - 19",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 4,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Snowshoe_cat",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "soma",
+    "name_en": "Somali",
+    "name_ko": "소말리 고양이",
+    "origin_ko": "소말리아",
+    "personality_traits": [
+      "장난기 많은",
+      "지속적인",
+      "지능적인",
+      "애정 어린",
+      "상호작용적인"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "슬림한 체형",
+      "큰 귀",
+      "눈에 띄는 눈"
+    ],
+    "summary_ko": "소말리 고양이는 매우 지능적이고 호기심이 많은 고양이로, 사람과 다른 동물들과의 교류를 즐깁니다. 이들은 장난기 많고 애정 어린 성격을 가지고 있으며, 활발하게 뛰어다니는 것을 좋아합니다.",
+    "potential_questions": [
+      "소말리 고양이는 어떤 성격을 가지고 있나요?",
+      "소말리 고양이의 털 관리 방법은?",
+      "소말리 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "12 - 16",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 3,
+      "dog_friendly": 4,
+      "energy_level": 5,
+      "grooming": 3,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 4,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 1
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Somali_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Somali.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/somali",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/somali"
+    }
+  },
+  {
+    "breed_id": "sphy",
+    "name_en": "Sphynx",
+    "name_ko": "스핑크스 고양이",
+    "origin_ko": "캐나다",
+    "personality_traits": [
+      "충성스러운",
+      "호기심 많은",
+      "친근한",
+      "조용한",
+      "부드러운"
+    ],
+    "physical_traits": [
+      "털이 없는",
+      "큰 귀",
+      "긴 다리",
+      "와이드한 얼굴"
+    ],
+    "summary_ko": "스핑크스 고양이는 털이 없는 독특한 외모를 가진 고양이로, 사람과의 교류를 매우 좋아합니다. 이들은 지능적이고 친근한 성격을 지니고 있으며, 주인에게 큰 애정을 보입니다.",
+    "potential_questions": [
+      "스핑크스 고양이는 털이 없는데 어떻게 관리하나요?",
+      "스핑크스 고양이의 성격은 어떤가요?",
+      "스핑크스 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "12 - 14",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 1,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 3,
+      "grooming": 2,
+      "health_issues": 4,
+      "intelligence": 5,
+      "shedding_level": 1,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Sphynx_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Sphynx.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/sphynx",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/sphynx"
+    }
+  },
+  {
+    "breed_id": "tonk",
+    "name_en": "Tonkinese",
+    "name_ko": "톤키니즈 고양이",
+    "origin_ko": "캐나다",
+    "personality_traits": [
+      "호기심 많은",
+      "지능적인",
+      "사교적인",
+      "활발한",
+      "애정 어린"
+    ],
+    "physical_traits": [
+      "짧은 털",
+      "우아한 체형",
+      "다양한 색상",
+      "눈에 띄는 패턴"
+    ],
+    "summary_ko": "톤키니즈 고양이는 시암 고양이와 버만 고양이의 교배로 탄생한 품종으로, 사교적이고 애정 어린 성격을 가지고 있습니다. 이들은 활발하게 놀기를 좋아하며, 사람과의 상호작용을 즐깁니다.",
+    "potential_questions": [
+      "톤키니즈 고양이는 어떤 성격을 가지고 있나요?",
+      "톤키니즈 고양이의 털 관리 방법은?",
+      "톤키니즈 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 5",
+      "life_span": "14 - 16",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Tonkinese_cat",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/Tonkinese.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/tonkinese",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/tonkinese"
+    }
+  },
+  {
+    "breed_id": "toyg",
+    "name_en": "Toyger",
+    "name_ko": "토이거 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "장난기 많은",
+      "사교적인",
+      "지능적인"
+    ],
+    "physical_traits": [
+      "호랑이 같은 줄무늬",
+      "튼튼한 체형",
+      "부드러운 털",
+      "큰 눈"
+    ],
+    "summary_ko": "토이거 고양이는 호랑이를 닮은 외모를 가진 고양이로, 친근하고 장난기 많은 성격을 지니고 있습니다. 이들은 사람과의 상호작용을 즐기며, 다양한 놀이를 좋아합니다.",
+    "potential_questions": [
+      "토이거 고양이는 어떤 성격을 가지고 있나요?",
+      "토이거 고양이의 털 관리 방법은?",
+      "토이거 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 7",
+      "life_span": "12 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 1,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 3,
+      "stranger_friendly": 5,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Toyger",
+      "cfa": null,
+      "vetstreet": "http://www.vetstreet.com/cats/toyger",
+      "vcahospitals": null
+    }
+  },
+  {
+    "breed_id": "tang",
+    "name_en": "Turkish Angora",
+    "name_ko": "터키 앙고라 고양이",
+    "origin_ko": "터키",
+    "personality_traits": [
+      "애정 어린",
+      "민첩한",
+      "영리한",
+      "부드러운",
+      "사교적인"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "슬림한 체형",
+      "우아한 외모",
+      "큰 눈"
+    ],
+    "summary_ko": "터키 앙고라 고양이는 고대의 자연 품종으로, 사람과의 유대감이 강하고 애정 어린 성격을 지니고 있습니다. 이들은 다른 애완동물과 잘 지내며, 가족과 함께하는 것을 좋아합니다.",
+    "potential_questions": [
+      "터키 앙고라 고양이는 어떤 성격을 가지고 있나요?",
+      "터키 앙고라 고양이의 털 관리 방법은?",
+      "터키 앙고라 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "2 - 5",
+      "life_span": "15 - 18",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 2,
+      "health_issues": 2,
+      "intelligence": 5,
+      "shedding_level": 2,
+      "social_needs": 5,
+      "stranger_friendly": 5,
+      "vocalisation": 3
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Turkish_Angora",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/TurkishAngora.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/turkish-angora",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/turkish-angora"
+    }
+  },
+  {
+    "breed_id": "tvan",
+    "name_en": "Turkish Van",
+    "name_ko": "터키 반 고양이",
+    "origin_ko": "터키",
+    "personality_traits": [
+      "민첩함",
+      "지능적",
+      "충성스러움",
+      "장난기 많음",
+      "활발함"
+    ],
+    "physical_traits": [
+      "반 긴 털",
+      "흰색 바탕에 머리와 꼬리 색상",
+      "큰 체구"
+    ],
+    "summary_ko": "터키 반 고양이는 민첩하고 활발한 성격을 가진 반 긴 털 품종으로, 주로 터키에서 유래되었습니다. 이 고양이는 독특한 반 패턴을 가지고 있으며, 머리와 꼬리의 색상이 특징적입니다. 터키 반은 사람과의 유대감을 중요시하며, 함께 시간을 보내는 것을 좋아합니다.",
+    "potential_questions": [
+      "터키 반 고양이는 어떤 성격을 가지고 있나요?",
+      "터키 반 고양이의 털 관리 방법은 무엇인가요?",
+      "터키 반 고양이는 다른 동물과 잘 지내나요?"
+    ],
+    "stats": {
+      "weight_metric": "3 - 9",
+      "life_span": "12 - 17",
+      "indoor": 0,
+      "lap": null,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 2,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/Turkish_Van",
+      "cfa": "http://cfa.org/Breeds/BreedsSthruT/TurkishVan.aspx",
+      "vetstreet": "http://www.vetstreet.com/cats/turkish-van",
+      "vcahospitals": "https://vcahospitals.com/know-your-pet/cat-breeds/turkish-van"
+    }
+  },
+  {
+    "breed_id": "ycho",
+    "name_en": "York Chocolate",
+    "name_ko": "요크 초콜릿 고양이",
+    "origin_ko": "미국",
+    "personality_traits": [
+      "장난기 많음",
+      "사교적",
+      "지능적",
+      "호기심 많음",
+      "친근함"
+    ],
+    "physical_traits": [
+      "긴 털",
+      "초콜릿 색상",
+      "뾰족한 꼬리"
+    ],
+    "summary_ko": "요크 초콜릿 고양이는 미국에서 유래된 드문 품종으로, 긴 털과 부드러운 초콜릿 색상이 특징입니다. 이 고양이는 사교적이고 친근한 성격을 가지고 있으며, 사람과의 교감을 즐깁니다. 요크 초콜릿은 물을 좋아하는 독특한 성향을 가지고 있어, 주인과 함께하는 것을 좋아합니다.",
+    "potential_questions": [
+      "요크 초콜릿 고양이는 어떤 성격을 가지고 있나요?",
+      "요크 초콜릿 고양이는 물을 좋아하나요?",
+      "요크 초콜릿 고양이의 털 관리 방법은 무엇인가요?"
+    ],
+    "stats": {
+      "weight_metric": "5 - 8",
+      "life_span": "13 - 15",
+      "indoor": 0,
+      "lap": 1,
+      "hypoallergenic": 0,
+      "adaptability": 5,
+      "affection_level": 5,
+      "child_friendly": 4,
+      "dog_friendly": 5,
+      "energy_level": 5,
+      "grooming": 3,
+      "health_issues": 1,
+      "intelligence": 5,
+      "shedding_level": 3,
+      "social_needs": 4,
+      "stranger_friendly": 4,
+      "vocalisation": 5
+    },
+    "source_urls": {
+      "wiki": "https://en.wikipedia.org/wiki/York_Chocolate",
+      "cfa": null,
+      "vetstreet": null,
+      "vcahospitals": null
+    }
+  }
+]
