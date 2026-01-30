@@ -30,7 +30,7 @@ class V2Preprocessor(BasePreprocessor):
         raw_path = self.policy.raw_data_path 
         if not os.path.exists(raw_path):
              # Fallback if config path is relative/not found
-             raw_path = "data/bemypet_catlab.json"
+             raw_path = "data/raw/bemypet_catlab.json"
         
         if not os.path.exists(raw_path):
             raise FileNotFoundError(f"Source data not found at {raw_path}")

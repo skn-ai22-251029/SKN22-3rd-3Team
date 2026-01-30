@@ -22,36 +22,43 @@ def generate_testset():
     with open(v3_path, "r", encoding="utf-8") as f:
         v3_docs = json.load(f)
 
-    # Ensure V2 and V3 are aligned by index (Assuming 1:1 mapping from pipeline)
-    if len(v2_docs) != len(v3_docs):
-        print(f"⚠️ Warning: V2 count ({len(v2_docs)}) != V3 count ({len(v3_docs)}). Mapping by index might be risky.")
-    
-    # Iterate and Map
-    # We assume v2_docs[i] corresponds to v3_docs[i] because the pipeline processed them in order.
-    # If not, we would need a key to match them (e.g. original title), but titles changed.
-    # If not, we would need a key to match them (e.g. original title), but titles changed.
-    # Let's rely on index for now as V3 was built from V2 batch.
-    
+    # Create V3 Lookup Map (Key: First 50 chars of text -> Value: V3 Doc)
+    # This handles the case where V3 dropped some V2 documents or reordered them.
+    v3_map = {}
+    for doc in v3_docs:
+        # Normalize text: strip and take first 50 chars
+        key = doc.get("text", "").strip()[:50]
+        if key:
+            v3_map[key] = doc
+            
+    print(f"🗺️ Created V3 Lookup Map with {len(v3_map)} entries.")
+
     evaluation_set = []
     count = 0
-    loop_count = min(len(v2_docs), len(v3_docs))
+    matched_count = 0
     
-    for i in range(loop_count):
-        v2_doc = v2_docs[i]
-        v3_doc = v3_docs[i]
-        
-        # Questions from V2
+    for v2_doc in v2_docs:
         questions = v2_doc.get("potential_questions", [])
         if not questions:
             continue
             
-        # Metadata from V3 (Target)
-        target_uid = v3_doc.get("uid")
-        target_title = v3_doc.get("title_refined") # V3 Title
+        # Try to find corresponding V3 doc
+        v2_key = v2_doc.get("text", "").strip()[:50]
+        v3_target = v3_map.get(v2_key)
         
-        # Specialist mapping (From V3 or V2? V3 specs are just strings, V2 has full text)
-        # Let's use V3's cleaner specialist field if available, else V2
-        specialist_list = v3_doc.get("specialists", [])
+        if not v3_target:
+            # If no match found (likely filtered out in V3 pipeline), skip
+            # specific logic could be added here to log missing
+            continue
+            
+        matched_count += 1
+            
+        # Metadata from V3 (Target)
+        target_uid = v3_target.get("uid")
+        target_title = v3_target.get("title_refined")
+        
+        # Specialist mapping: Use V3's if available, else V2's
+        specialist_list = v3_target.get("specialists", [])
         specialist = specialist_list[0] if specialist_list else "General"
         
         # Iterate through ALL potential questions
@@ -60,9 +67,11 @@ def generate_testset():
                 "query": q,
                 "expected_keyword": target_title, # Ground Truth is the Refined Title
                 "specialist": specialist,
-                "source_doc_id": target_uid # Correct V3 ID (v3_XXXXX)
+                "source_doc_id": target_uid
             })
             count += 1
+            
+    print(f"🔗 Successfully matched {matched_count}/{len(v2_docs)} documents.")
         
     # Shuffle (Optional, but good for randomness if we inspect manually)
     random.shuffle(evaluation_set)

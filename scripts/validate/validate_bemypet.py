@@ -2,7 +2,7 @@ import json
 from collections import Counter
 
 def validate():
-    file_path = "data/bemypet_catlab.json"
+    file_path = "data/raw/bemypet_catlab.json"
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)

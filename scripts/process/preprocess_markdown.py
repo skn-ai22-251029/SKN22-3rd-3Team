@@ -16,8 +16,8 @@ from src.preprocessing.article_classifier import ArticleClassifier
 async def process_markdown_summaries():
     # We keep the file name youtube_extract.md as per previous instruction, 
     # but the loader/script is now generically named.
-    INPUT_FILE = os.path.join(PROJECT_ROOT, 'data/youtube_extract.md')
-    OUTPUT_FILE = os.path.join(PROJECT_ROOT, 'data/youtube_extract_preprocessed.json')
+    INPUT_FILE = os.path.join(PROJECT_ROOT, 'data/raw/youtube_extract_info.md')
+    OUTPUT_FILE = os.path.join(PROJECT_ROOT, 'data/raw/youtube_extract_preprocessed.json')
     
     if not os.path.exists(INPUT_FILE):
         print(f"⚠️ Input file not found: {INPUT_FILE}")

@@ -13,7 +13,7 @@ def main():
         data = crawler.crawl()
         print(f"Successfully crawled {len(data)} breeds.")
         
-        output_path = "data/cat_breeds_thecatapi.json"
+        output_path = "data/raw/cat_breeds_thecatapi.json"
         crawler.save(data, output_path)
     except Exception as e:
         print(f"An error occurred: {e}")

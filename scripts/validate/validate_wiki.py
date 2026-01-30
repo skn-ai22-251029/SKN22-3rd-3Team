@@ -6,8 +6,8 @@ import os
 
 def validate():
     # Paths
-    csv_path = 'data/cat_breeds.csv'
-    json_path = 'data/cat_breeds_wiki_info.json'
+    csv_path = 'data/raw/cat_breeds.csv'
+    json_path = 'data/raw/cat_breeds_wiki_info.json'
     
     # Check files
     if not os.path.exists(csv_path) or not os.path.exists(json_path):

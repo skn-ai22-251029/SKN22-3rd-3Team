@@ -25,6 +25,11 @@ class HybridRetriever:
         Performs Hybrid Search using RRF (Reciprocal Rank Fusion) with optional Specialist filtering.
         """
         print(f"🔍 [RETRIEVER]: Searching for '{query}' (Specialist: {specialist})...")
+        
+        # Treat 'General' as no filter (matches all docs including those with empty specialists)
+        if specialist == "General":
+            specialist = None
+            
         # 1. Vector Search with Pre-filter
         query_vector = await self.embedder.embed_query(query)
         

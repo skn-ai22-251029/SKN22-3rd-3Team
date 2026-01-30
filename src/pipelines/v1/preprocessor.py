@@ -24,7 +24,7 @@ class V1Preprocessor(BasePreprocessor):
 
     async def run_async(self) -> str:
         print("🚀 Starting V1 Preprocessing (Legacy)...")
-        raw_path = "data/bemypet_catlab.json" 
+        raw_path = "data/raw/bemypet_catlab.json" 
         
         if not os.path.exists(raw_path):
             raise FileNotFoundError(f"Source data not found at {raw_path}")

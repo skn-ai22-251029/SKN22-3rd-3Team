@@ -107,7 +107,7 @@ def main():
     
     # We are usually running from project root, but let's be safe.
     # If running "python scripts/crawl/crawl_bemypet.py", CWD is project root.
-    output_dir = "data"
+    output_dir = "data/raw"
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, "bemypet_catlab.json")
     

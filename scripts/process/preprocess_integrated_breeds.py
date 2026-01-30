@@ -14,9 +14,9 @@ sys.path.append(PROJECT_ROOT)
 from src.preprocessing.breed_classifier import BreedClassifier
 
 async def preprocess_integrated_breeds():
-    CSV_PATH = os.path.join(PROJECT_ROOT, 'data/cat_breeds.csv')
-    THECATAPI_PATH = os.path.join(PROJECT_ROOT, 'data/cat_breeds_thecatapi.json')
-    WIKI_PATH = os.path.join(PROJECT_ROOT, 'data/cat_breeds_wiki_info.json')
+    CSV_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds.csv')
+    THECATAPI_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds_thecatapi.json')
+    WIKI_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds_wiki_info.json')
     OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'data/cat_breeds_integrated.json')
 
     print("🔍 Loading raw breed data sources...")

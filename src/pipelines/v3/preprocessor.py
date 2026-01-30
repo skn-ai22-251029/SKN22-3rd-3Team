@@ -61,7 +61,7 @@ class V3Preprocessor(BasePreprocessor):
     async def run(self, limit: int = None) -> str:
         print("🚀 Starting V3 Pure Preprocessing (Raw -> LLM)...")
         
-        raw_path = "data/bemypet_catlab.json"
+        raw_path = "data/raw/bemypet_catlab.json"
         if not os.path.exists(raw_path):
             raise FileNotFoundError(f"Source raw data not found at {raw_path}")
 

@@ -10,8 +10,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.utils.wiki_api import WikipediaAPI
 
 def main():
-    input_file = 'data/cat_breeds_thecatapi.json'
-    output_file = 'data/cat_breeds_wiki_info.json' # Let's keep consistency in variable naming, though file logic handles it below
+    input_file = 'data/raw/cat_breeds_thecatapi.json'
+    output_file = 'data/raw/cat_breeds_wiki_info.json' # Let's keep consistency in variable naming, though file logic handles it below
 
     # Check if input file exists
     if not os.path.exists(input_file):
@@ -112,7 +112,7 @@ def main():
         sleep(0.5)
 
     # Save results to JSON
-    output_json_file = 'data/cat_breeds_wiki_info.json'
+    output_json_file = 'data/raw/cat_breeds_wiki_info.json'
     import json
     with open(output_json_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
