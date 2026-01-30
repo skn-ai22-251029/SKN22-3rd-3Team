@@ -22,7 +22,7 @@ async def build_domain_dictionary():
     kiwi = Kiwi()
     
     # Input Paths
-    raw_guides_path = os.path.join(PROJECT_ROOT, "data/bemypet_catlab.json")
+    raw_guides_path = os.path.join(PROJECT_ROOT, "data/raw/bemypet_catlab.json")
     breeds_path = os.path.join(PROJECT_ROOT, "data/v2/cat_breeds_integrated.json")
     
     noun_counts = Counter()
@@ -85,16 +85,41 @@ async def build_domain_dictionary():
                         breed_names.add(name.replace(" 고양이", ""))
                         
     print(f"🐈 Added {len(breed_names)} breed terms explicitly.")
+
+    # 3. Process Synonyms (Explicitly add nicknames as NNP)
+    synonyms_path = os.path.join(PROJECT_ROOT, "src/core/synonyms.json")
+    synonym_terms = set()
+    if os.path.exists(synonyms_path):
+        with open(synonyms_path, "r", encoding="utf-8") as f:
+            syn_data = json.load(f)
+            
+        for standard, aliases in syn_data.items():
+            for alias in aliases:
+                # Add alias to dictionary so it's tokenized as a single noun
+                synonym_terms.add(alias)
+                
+        print(f"🔄 Added {len(synonym_terms)} synonym terms from synonyms.json.")
+    else:
+        print(f"⚠️ Warning: Synonyms file not found at {synonyms_path}")
     
-    # Merge: Top 1000 + Breeds
-    final_dict = top_nouns | breed_names
+    # 4. Process Extra Nouns
+    extra_nouns_path = os.path.join(PROJECT_ROOT, "src/core/extra_nouns.txt")
+    extra_nouns = set()
+    if os.path.exists(extra_nouns_path):
+        with open(extra_nouns_path, "r", encoding="utf-8") as f:
+            for line in f:
+                parts = line.strip().split('\t')
+                word = parts[0].strip()
+                if word:
+                    extra_nouns.add(word)
+        print(f"➕ Added {len(extra_nouns)} extra noun terms.")
+
+    # Merge: Top 1000 + Breeds + Synonyms + Extra Nouns
+    final_dict = top_nouns | breed_names | synonym_terms | extra_nouns
     sorted_dict = sorted(list(final_dict))
     
     # Save to file
-    output_dir = os.path.join(PROJECT_ROOT, "data/v3")
-    os.makedirs(output_dir, exist_ok=True)
-    
-    output_path = os.path.join(output_dir, "domain_dictionary.txt")
+    output_path = os.path.join(PROJECT_ROOT, "src/core/domain_dictionary.txt")
     
     with open(output_path, "w", encoding="utf-8") as f:
         for word in sorted_dict:
