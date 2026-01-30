@@ -1,33 +1,39 @@
-# 📚 Zipsa Helper Documentation Index
+# 📄 Documentation (`docs/`)
 
-집사Helper (Zipsa Helper) 프로젝트의 모든 문서를 역할별로 분류하여 정리했습니다.
-
----
-
-## 📁 [01_concept](./01_concept/) - 프로젝트 기획 및 철학
-- **[project_idea.md](./01_concept/project_idea.md)**: 전체 프로젝트 요약 및 로드맵.
-- **[personas.md](./01_concept/personas.md)**: 서비스 페르소나(Matchmaker, Physician 등) 상세 정의.
-- **[concept_proposals.md](./01_concept/concept_proposals.md)**: 초기 기획안 및 서비스 컨셉 제안서.
-
-## 📁 [02_design](./02_design/) - 시스템 및 아키텍처 디자인
-- **[project_structure.md](./02_design/project_structure.md)**: 최신 정책 기반(Policy-Based) 폴더 구조 시각화.
-- **[architecture.md](./02_design/architecture.md)**: LangGraph 기반 계층형 에이전트 워크플로우 명세.
-- **[refactoring_guide.md](./02_design/refactoring_guide.md)**: 리팩토링 원칙 및 가이드라인.
-
-## 📁 [03_data](./03_data/) - 데이터 파이프라인 및 분석
-- **[data_preprocessing_report.md](./03_data/data_preprocessing_report.md)**: LLM 기반 지식 추출 및 다중 라벨링(Taxonomy v2) 전처리 보고서.
-
-## 📁 [04_api](./04_api/) - API 명세 및 외부 연동
-- **[openapi_spec.md](./04_api/openapi_spec.md)**: 프로젝트 내부 API 명세서.
-- **[thecatapi_spec.md](./04_api/thecatapi_spec.md)**: TheCatAPI 연동 가이드 및 명세.
-- **[thecatapi-oas.yaml](./04_api/thecatapi-oas.yaml)**: TheCatAPI OpenAPI Spec (YAML).
-
-## 📁 [05_guides](./05_guides/) - 개발 환경 및 운영 가이드
-- **[mongodb_setup_guide.md](./05_guides/mongodb_setup_guide.md)**: MongoDB Atlas 및 벡터 검색 인덱스 설정 가이드.
+본 디렉토리는 프로젝트의 비전 기획부터 기술적 설계 규격, 파이프라인 전략 및 실무 가이드를 관리하는 통합 문서 보관소입니다.
 
 ---
-## 📂 [dev_logs](./dev_logs/) - 개발 히스토리
-- 프로젝트 진행 과정에서 기록된 일별/기능별 개발 로그 모음.
 
----
-**Zipsa Helper**팀은 체계적인 문서화를 통해 지속 가능한 코드 베이스를 구축합니다. 🐾✨
+## 📂 디렉토리 및 핵심 파일 명세
+
+### 1. [01_project](./01_project) (비전 및 구조)
+- **`overview.md`**: 전담 전문가 에이전트 시스템(ZIPSA)의 기획 의도와 핵심 가치 제언.
+- **`personas.md`**: `Head Butler`, `Matchmaker`, `Physician` 등 4대 전문가 페르소나의 행동 강령 및 역할 정의.
+- **`architecture_graph.md`**: LangGraph의 계층적 토폴로지 및 데이터 흐름 다이어그램.
+
+### 2. [02_convention](./02_convention) (개발 표준)
+- **`workflow_rules.md`**: Git 브랜치 전략(Git Flow), 커밋 메시지 규격 및 협업 워크플로우.
+- **`naming_guide.md`**: 변수, 함수, 클래스 및 파일 시스템 명명 규칙 가이드라인.
+
+### 3. [03_api](./03_api) (외부 연동 규격)
+- **`thecatapi_spec.md` / `thecatapi-oas.yaml`**: TheCatAPI 기반 묘종 데이터 수집 인터페이스 정의.
+- **`openapi_spec.md`**: OpenAI 임베딩 및 Chat Completion API 활용 프로토콜.
+- **`hospital_search_v2-3.md`**: 지역 기반 동물병원 검색 기능 설계 문서.
+
+### 4. [04_data](./04_data) (데이터 전략)
+- **`v3_pipeline_strategy_report.md`**: 검샘 품질을 위한 **구조적 임베딩(Structured Embedding)** 전략 보고서.
+- **`v3_pipeline_flow.md`**: V3 파이프라인의 3단계 자동화 공정 시각화 문서.
+- **`data_preprocessing_report_v1~v3.md`**: 각 세대별 데이터 정제 및 메타데이터 추출 결과 데이터.
+
+### 5. [05_feature](./05_feature) (기능 명세)
+- **`auth_profile_spec.md`**: 사용자 인증 및 반려묘 프로필 관리 로딕 상세.
+- **`cat_card_spec.md`**: 묘종 검색 결과 시각화(Cat Identity Card) 컴포넌트 규격.
+
+### 6. [05_guides](./05_guides) (매뉴얼)
+- **`mongodb_setup_guide.md`**: MongoDB Atlas 벡터 검색 인덱스 및 키워드 검색 설정 가이드.
+
+### 7. [report](./report) (성과 관리)
+- **`checklist.md`**: 프로젝트 완성도 자가 점검 및 11개 영역별 피드백 리스트.
+
+### 8. [dev_logs](./dev_logs) (기록)
+- 일자별 기술적 의사결정(ADR) 및 트러블슈팅 내역 보관 (`YYYY-MM-DD.md`).
