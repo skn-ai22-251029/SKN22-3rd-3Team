@@ -30,17 +30,26 @@ class BreedPipeline:
         print(f"🚀 Starting V3 Breed Pipeline (Target: {self.collection.name})...")
         
         # 1. Load Data
-        v2_path = "data/v2/cat_breeds_integrated.json"
+        # 1. Load Data
+        input_path = ZipsaConfig.get_policy("v3").breed_data_path
         
-        if not os.path.exists(v2_path):
-             print(f"❌ Input file not found: {v2_path}")
+        if not os.path.exists(input_path):
+             print(f"❌ Input file not found: {input_path}")
              return
 
-        with open(v2_path, "r", encoding="utf-8") as f:
+        with open(input_path, "r", encoding="utf-8") as f:
             raw_breeds = json.load(f)
-            
-        print(f"📦 Loaded {len(raw_breeds)} breeds from {v2_path}")
-        
+        print(f"📦 Loaded {len(raw_breeds)} breeds from {input_path}")
+
+        # 2. Load Raw TheCatAPI data for Image Enrichment
+        THECATAPI_RAW = "data/raw/cat_breeds_thecatapi.json"
+        image_map = {}
+        if os.path.exists(THECATAPI_RAW):
+            with open(THECATAPI_RAW, "r", encoding="utf-8") as f:
+                raw_list = json.load(f)
+                image_map = {item["id"]: item.get("image", {}).get("url") for item in raw_list}
+            print(f"🖼️ Loaded {len(image_map)} image mappings for enrichment.")
+
         documents = []
         
         for breed in tqdm(raw_breeds, desc="Processing"):
@@ -88,7 +97,25 @@ class BreedPipeline:
                     text=clean_text,
                     tokenized_text=tokenized,
                     categories=["Breeds"],
-                    specialists=["Matchmaker"]
+                    specialists=["Matchmaker"],
+                    image_url=image_map.get(breed['breed_id']),
+                    
+                    # [Metadata Filters] Populate
+                    filter_shedding=stats.shedding_level,
+                    filter_energy=stats.energy_level,
+                    filter_intelligence=stats.intelligence,
+                    filter_affection=stats.affection_level,
+                    filter_child_friendly=stats.child_friendly,
+                    filter_indoor=stats.indoor,
+                    filter_lap=stats.lap,
+                    filter_hypoallergenic=stats.hypoallergenic,
+                    filter_adaptability=stats.adaptability,
+                    filter_dog_friendly=stats.dog_friendly,
+                    filter_grooming=stats.grooming,
+                    filter_health_issues=stats.health_issues,
+                    filter_social_needs=stats.social_needs,
+                    filter_stranger_friendly=stats.stranger_friendly,
+                    filter_vocalisation=stats.vocalisation
                 )
                 
                 # D. Get Embedding

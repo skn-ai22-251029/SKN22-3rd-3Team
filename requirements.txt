@@ -19,3 +19,11 @@ sentence-transformers
 transformers
 torch
 streamlit
+httpx
+uvloop
+jinja2
+pydantic
+langsmith
+playwright
+PyYAML
+numpy

@@ -9,3 +9,5 @@ env/
 data/
 *.ipynb_checkpoints
 # src/notebooks/
+CLAUDE.md
+.claude/

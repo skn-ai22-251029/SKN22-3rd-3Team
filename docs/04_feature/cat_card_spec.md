@@ -30,29 +30,23 @@
     *   `subtitle`: 품종 (예: "샴")
     *   `stats`: `health_status` (건강 상태), `age` 등 사용자 정의 수치 또는 D-Day(접종일) 시각화.
 
-## 3. 데이터 소스 상세 (Breed Card 기준)
-DB(`cat_breeds_integrated.json` / Atlas `catfit_v2.breeds`) 데이터를 매핑한다.
+## 3. 데이터 소스 및 구현 (V3)
+DB(`cat_library.care_guides`) 데이터를 매핑하며, `src/core/models/dtos.py`의 `CatCardRecommendation` 스펙을 따릅니다.
 
 ### 3.1. 매핑 상세
-*   **이미지 (Breed Image)**:
-    *   TheCatAPI를 활용하여 해당 품종의 고해상도 이미지 확보.
-    *   **전략**: API를 매번 호출하는 대신, 초기 1회 크롤링하여 로컬 또는 CDN에 저장(캐싱)하여 사용. (비용 및 속도 최적화)
-*   **특성 (Traits)**:
-    *   `temperament` (성격) 키워드 태그 나열 (예: '애교 많은', '활동적인').
-    *   **설명**: `summary_ko` (한글 요약) 활용.
-    *   **출처**: `source_urls`의 위키피디아(Wiki) 링크 제공.
-*   **스탯 (Stats) 시각화**:
-    *   주요 수치 데이터를 방사형(Radar) 차트 또는 막대(Bar) 그래프로 표현.
-    *   항목 예시: `adaptability` (적응력), `affection_level` (애정도), `energy_level` (활동량), `intelligence` (지능) 등.
+- **이미지 (Breed Image)**: `TheCatAPI` 고해상도 이미지 URL 전수 매칭 완료.
+- **특성 (Traits)**: `personality_traits` 리스트를 해시태그(`#`) 형태로 변환하여 제공.
+- **설명**: `summary` 필드 기반의 1문장 요약 제공.
+- **스탯 (Stats) 시각화**: `stats` 필드의 17개 지표 중 핵심 수치를 별점(1-5)으로 시각화.
 
 ## 3. 기능 시나리오
 
-### 3.1. 챗봇 연동 (Contextual Highlight)
-*   **트리거**: 챗봇 응답 텍스트 내 "품종명"이 포함될 경우 자동 감지.
-*   **동작**:
-    1.  해당 텍스트에 하이라이팅(밑줄 또는 색상 변경) 적용.
-    2.  사용자가 **마우스 오버(Hover)** 시 '고양이 카드' 팝오버(Popover) 또는 툴팁 노출.
-    3.  클릭 시 상세 페이지 또는 모달 확장 (선택 사항).
+### 3.1. 챗봇 연동 (Dual-Mode Response)
+- **에이전트**: `Matchmaker Specialist`
+- **응답 구성**: 
+  - `text_response`: 친근한 고양이 말투의 상담 텍스트.
+  - `recommendations`: `CatCardRecommendation` 객체 리스트 (1~3개).
+- **UI 렌더링**: 프론트엔드에서 `state["recommendations"]`를 감지하여 HTML 템플릿에 데이터 주입 후 렌더링.
 
 ### 3.2. 카드 UI 구성 (Mock-up)
 *   헤더: 품종 이름 및 대표 이미지.

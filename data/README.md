@@ -6,8 +6,8 @@
 
 ### 0. [raw/](./raw) (원천 데이터)
 수집 엔진을 통해 확보한 정제 전 원시 데이터셋입니다.
-- **`bemypet_catlab.json`**: BemyPet Catlab 아티클 원본.
-- **`cat_breeds_thecatapi.json`**: TheCatAPI 기반 묘종 기본 데이터.
+- **`bemypet_catlab.json`**: BemyPet Catlab 아티클 원본 (1,153건).
+- **`cat_breeds_thecatapi.json`**: TheCatAPI 기반 묘종 기본 데이터 (67종).
 - **`cat_breeds_wiki_info.json`**: Wikipedia 추가 정보 수집본.
 - **`cat_breeds.csv`**: 품종 마스터 리스트.
 - **`cat_cafes.json`**: 고양이 카페 위치 정보.
@@ -23,7 +23,16 @@
 - **`cat_breeds_integrated.json`**: 다중 라벨링 및 전문가 페르소나 매핑이 적용된 고도화 묘종 데이터.
 - **`bemypet_catlab_v2_preprocessed.json`**: V2 공정 분류 완료 데이터.
 
-### 3. [v3/](./v3) (운영 최적화 단계)
+### 3. [v3/](./v3) (운영 최적화 단계 - 현재 활성)
+- **`cat_breeds_integrated.json`**: TheCatAPI 이미지 매칭 및 Breed Filtering Policy가 적용된 최종 묘종 데이터 (67종).
+- **`processed.json`**: V3 파이프라인 정제 결과 데이터 (아티클 1,153건).
+- **`embedded.pkl`**: OpenAI `text-embedding-3-small` 임베딩이 적용된 최종 서비스용 벡터 자산.
 - **`golden_dataset.json`**: 검색 품질 측정을 위한 쿼리-정답지 성능 평가셋.
-- **`embedded.pkl`**: OpenAI `3-small` 임베딩이 적용된 최종 서비스용 벡터 자산.
-- **`processed.json`**: V3 파이프라인 정제 결과 데이터.
+
+---
+
+## 📊 V3 Unified Storage Strategy
+V3에서는 아티클과 품종 데이터를 단일 MongoDB 컬렉션(`cat_library.care_guides`)에 통합 저장합니다.
+- **Categories**: `["Breeds"]`, `["Health"]` 등 주제별 구분.
+- **Specialists**: `["Matchmaker"]`, `["Physician"]` 등 담당 전문가 구분.
+- **Metadata Filters**: `filter_shedding`, `filter_energy` 등 동적 필터링 지원.

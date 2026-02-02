@@ -23,7 +23,10 @@ async def build_domain_dictionary():
     
     # Input Paths
     raw_guides_path = os.path.join(PROJECT_ROOT, "data/raw/bemypet_catlab.json")
-    breeds_path = os.path.join(PROJECT_ROOT, "data/v2/cat_breeds_integrated.json")
+    
+    # Use V3 Policy for breeds path
+    v3_policy = ZipsaConfig.get_policy("v3")
+    breeds_path = os.path.join(PROJECT_ROOT, v3_policy.breed_data_path)
     
     noun_counts = Counter()
     
@@ -87,7 +90,7 @@ async def build_domain_dictionary():
     print(f"🐈 Added {len(breed_names)} breed terms explicitly.")
 
     # 3. Process Synonyms (Explicitly add nicknames as NNP)
-    synonyms_path = os.path.join(PROJECT_ROOT, "src/core/synonyms.json")
+    synonyms_path = os.path.join(PROJECT_ROOT, "src/core/tokenizer/synonyms.json")
     synonym_terms = set()
     if os.path.exists(synonyms_path):
         with open(synonyms_path, "r", encoding="utf-8") as f:
@@ -103,7 +106,7 @@ async def build_domain_dictionary():
         print(f"⚠️ Warning: Synonyms file not found at {synonyms_path}")
     
     # 4. Process Extra Nouns
-    extra_nouns_path = os.path.join(PROJECT_ROOT, "src/core/extra_nouns.txt")
+    extra_nouns_path = os.path.join(PROJECT_ROOT, "src/core/tokenizer/extra_nouns.txt")
     extra_nouns = set()
     if os.path.exists(extra_nouns_path):
         with open(extra_nouns_path, "r", encoding="utf-8") as f:
@@ -119,7 +122,7 @@ async def build_domain_dictionary():
     sorted_dict = sorted(list(final_dict))
     
     # Save to file
-    output_path = os.path.join(PROJECT_ROOT, "src/core/domain_dictionary.txt")
+    output_path = os.path.join(PROJECT_ROOT, "src/core/tokenizer/domain_dictionary.txt")
     
     with open(output_path, "w", encoding="utf-8") as f:
         for word in sorted_dict:

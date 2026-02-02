@@ -1,12 +1,12 @@
 # 🏰 ZIPSA: AI-Powered Cat Head Butler Service
-> **"Every Butler Needs a Head Butler."**  
+> **"Every Butler Needs a Head Butler."**
 > **Agentic RAG-based Lifestyle Matching & Comprehensive Care System**
 
 ---
 
 ## 1. Project Vision (비전)
-**ZIPSA(집사)**는 초보 및 예비 '집사(고양이 반려인)'를 위한 **AI 수석 집사 서비스**입니다.  
-사용자의 라이프스타일을 심층 분석하여 가장 적합한 묘종을 추천하고(Matching), 입양 후에는 다중묘 갈등 조정부터 건강 관리까지(Care) 전방위로 지원하는 **'Agentic RAG' 기반의 코칭 시스템**입니다. 단순한 챗봇을 넘어, 전문성을 가진 **전문가 팀(Specialist Agents)**이 협업하여 사용자의 고민을 해결합니다.
+**ZIPSA(집사)**는 초보 및 예비 '집사(고양이 반려인)'를 위한 **AI 수석 집사 서비스**입니다.
+사용자의 라이프스타일을 심층 분석하여 가장 적합한 묘종을 추천하고(Matching), 입양 절차를 안내하며(Liaison), 입양 후에는 다중묘 갈등 조정부터 건강 관리까지(Care) 전방위로 지원하는 **'Agentic RAG' 기반의 코칭 시스템**입니다. 단순한 챗봇을 넘어, 전문성을 가진 **전문가 팀(Specialist Agents)**이 협업하여 사용자의 고민을 해결합니다.
 
 ---
 
@@ -15,11 +15,13 @@
 ### 🧩 1. Lifestyle Matching (맞춤형 매칭)
 - **사용자 분석**: 주거 환경(아파트/주택), 가족 구성원, 알러지 유무, 활동량 등을 고려한 정밀 분석.
 - **RAG 기반 추천**: 67종의 고양이 품종 데이터와 수천 건의 양육 가이드를 기반으로 최적의 묘종 매칭.
+- **Breed Filtering Policy**: "털 빠짐", "활동량" 등 사용자의 구체적인 요구사항을 데이터 수치와 매칭하는 엄격한 필터링 정책(`breed_criteria.py`) 적용.
 - **파양 방지**: 단순 외모가 아닌, '함께 살 수 있는' 반려묘를 추천하여 파양률을 낮춥니다.
 
-### 🔭 2. Ethical Adoption (유기묘 연계)
-- **보호소 연계**: 추천된 품종과 유사한 유기묘 정보를 실시간으로 탐색.
-- **입양 지원**: 입양 절차, 필수 준비물, 법적 고려사항 가이드 제공.
+### 🔭 2. Ethical Adoption (입양/구조 연계)
+- **입양 안내**: 입양 절차, 서류, 비용, 준비물 등 일반 입양 정보를 RAG 기반으로 제공.
+- **구조동물 조회**: 국가동물보호정보시스템 API를 통해 보호 중인 고양이 정보를 실시간 조회.
+- **보호소 연계**: 지역별 보호소 정보 및 연락처 안내.
 
 ### ⚖️ 3. Conflict Resolution (다묘 갈등 조정)
 - **성향 분석**: 기존 반려묘와 새로운 반려묘의 MBTI(성격 유형) 분석.
@@ -31,23 +33,25 @@
 
 ---
 
-## 3. Team Structure (AI 페르소나 조직도)
-ZIPSA 시스템은 **수석 집사(Head Butler)**를 중심으로 두 개의 전문 팀으로 구성되어 있습니다.
+## 3. Agent Structure (AI 에이전트 구조)
+ZIPSA 시스템은 **수석 집사(Head Butler)**를 중심으로 4개의 전문가 노드로 구성되어 있습니다.
+Head Butler가 유일한 Exit Point이며, 전문가 노드는 구조화 JSON(`specialist_result`)으로 결과를 반환하고 반드시 Head Butler로 복귀합니다.
 
-### 🎩 Head Butler (수석 집사)
-- **역할**: 사용자의 의도를 파악하고 적절한 전문가 팀으로 업무를 배분(Routing)하는 총괄 관리자.
+### 🎩 Head Butler (수석 집사 / Router & Exit Point)
+- **역할**: 사용자 의도를 LLM Structured Output으로 분류(`matchmaker`, `liaison`, `care`, `general`)하여 라우팅. 일반 질문은 직접 응답. 전문가 복귀 시 specialist_result를 후처리하여 최종 응답 생성.
 - **위치**: `src/agents/head_butler.py`
 
-### 🏢 Team 1: Adoption (입양 팀)
-새로운 가족을 맞이하는 과정을 전담합니다.
-- **Matchmaker (인사 담당)**: 라이프스타일 기반 품종 추천 및 성향 분석.
-- **Liaison (대외 협력)**: **[Tool]** 국가동물보호정보시스템 API 기반 유기묘 검색 및 입양 절차 안내.
-- **위치**: `src/agents/adoption_team.py`
+### 🧩 Matchmaker (품종 추천 전문가)
+- **역할**: 라이프스타일 기반 품종 추천 (RAG: `specialist="Matchmaker"`, `categories="Breeds"` 필터).
+- **위치**: `src/agents/matchmaker.py`
 
-### 🏥 Team 2: Care (케어 팀)
-반려 생활 중 발생하는 건강 및 행동 문제를 해결합니다.
-- **Physician (주치의)**: 질병 증상 분석 및 식이/영양 상담.
-- **Peacekeeper (평화유지군)**: 다묘 가정 갈등 해결 및 행동 교정.
+### 🔭 Liaison (입양/구조 전문가)
+- **역할**: 입양 절차/서류/비용 안내 (RAG: `specialist="Liaison"`), 구조동물 조회 (Tool).
+- **Tool**: `search_abandoned_animals` — 국가동물보호정보시스템 유기동물 조회 API (`src/agents/tools/animal_protection.py`)
+- **위치**: `src/agents/liaison.py`
+
+### 🏥 Care Team (건강 & 행동 통합 전문가)
+- **역할**: LLM 분류로 Physician(의료) / Peacekeeper(행동)을 내부 판단 후 해당 specialist 태그로 RAG 검색. 페르소나 프롬프트 기반 응답 생성.
 - **위치**: `src/agents/care_team.py`
 
 > [!TIP]
@@ -56,12 +60,12 @@ ZIPSA 시스템은 **수석 집사(Head Butler)**를 중심으로 두 개의 전
 ---
 
 ## 4. Technical Architecture (아키텍처)
-본 프로젝트는 **Hierarchical LangGraph (Multi-Agent Supervisor)** 패턴을 채택했습니다.
+본 프로젝트는 **LangGraph 기반 4-Node Agent System** 패턴을 채택했습니다.
 
-- **Orchestraion**: `LangGraph`를 이용한 상태 관리(Stateful) 및 에이전트 라우팅.
-- **Knowledge Base (RAG)**: 
-    - **Vector Store**: MongoDB Atlas Vector Search (v1/v2 Clusters).
-    - **Retrieval**: Hybrid Search (Vector + Keyword/BM25 + RRF Re-ranking).
+- **Orchestration**: `LangGraph`를 이용한 상태 관리(Stateful) 및 에이전트 라우팅. Head Butler가 유일한 Exit Point.
+- **Knowledge Base (RAG)**:
+    - **Vector Store**: MongoDB Atlas Vector Search (`cat_library`).
+    - **Retrieval**: Hybrid Search (Vector + Keyword/BM25 + RRF Re-ranking + Dynamic Metadata Filtering).
     - **Data Source**: TheCatAPI(품종), Wikipedia(상세), BemyPet(케어 가이드).
 - **Interface**: Streamlit 기반의 인터랙티브 채팅 UI.
 - **Environment**: Python 3.11+ (Conda `skn-third-proj`).
@@ -82,15 +86,15 @@ skn-third-proj/
 ├── data/               # Raw & Processed Data
 ├── docs/               # Documentation
 ├── scripts/            # Execution Scripts
-│   └── v3/             # V3 Pipeline Scripts (run_preprocess, run_embed, run_load)
+│   ├── v3/             # Article Pipeline (run_preprocess, run_embed, run_load)
+│   └── process_breeds_v3.py  # Breed Data Pipeline (Policy-based)
 ├── src/
-│   ├── agents/         # LangGraph Agents
-│   ├── core/           # Config & Settings
+│   ├── agents/         # LangGraph Agents & Routing Logic
+│   │   ├── filters/    # Metadata Filter Extraction (breed_criteria.py)
+│   │   └── tools/      # Agent Tools (animal_protection.py)
+│   ├── core/           # Standardized Core (Prompts, DTOs, Tokenizer Config)
 │   ├── pipelines/      # Data Pipelines (ETL)
-│   │   ├── base.py     # Base Interfaces
-│   │   └── v3/         # V3 Pipeline Logic (Preprocess -> Embed -> Load)
-│   ├── retrieval/      # RAG Logic
-│   └── utils/          # Helper Functions
-├── tests/              # Unit Tests
+│   ├── retrieval/      # RAG & Search Logic (hybrid_search.py)
+│   └── utils/          # Generic Utilities
 └── .env                # Environment Variables
 ```

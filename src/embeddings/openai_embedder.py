@@ -5,7 +5,7 @@ from .base import BaseEmbedder
 
 class OpenAIEmbedder(BaseEmbedder):
     def __init__(self, model_name: str = "text-embedding-3-small"):
-        # OpenAI text-embedding-3-small dimension is 1536
+        # OpenAI text-embedding-3-small의 차원은 1536입니다.
         super().__init__(dimension=1536)
         self.model_name = model_name
         self.client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))

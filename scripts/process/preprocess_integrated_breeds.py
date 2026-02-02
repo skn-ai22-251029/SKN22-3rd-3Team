@@ -12,12 +12,19 @@ PROJECT_ROOT = os.path.dirname(BASE_DIR)
 sys.path.append(PROJECT_ROOT)
 
 from src.preprocessing.breed_classifier import BreedClassifier
+from src.core.config import ZipsaConfig
 
 async def preprocess_integrated_breeds():
     CSV_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds.csv')
     THECATAPI_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds_thecatapi.json')
     WIKI_PATH = os.path.join(PROJECT_ROOT, 'data/raw/cat_breeds_wiki_info.json')
-    OUTPUT_PATH = os.path.join(PROJECT_ROOT, 'data/cat_breeds_integrated.json')
+    
+    # Use V3 Policy for output path
+    v3_policy = ZipsaConfig.get_policy("v3")
+    OUTPUT_PATH = os.path.join(PROJECT_ROOT, v3_policy.breed_data_path)
+    
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 
     print("🔍 Loading raw breed data sources...")
     

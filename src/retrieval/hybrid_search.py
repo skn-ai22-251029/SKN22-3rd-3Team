@@ -14,25 +14,43 @@ class HybridRetriever:
         else:
             self.db = MongoDBManager.get_v2_db()
         
-        # Use collection from policy if not provided
+        # 정책에 있는 컬렉션을 기본값으로 사용 (명시적으로 주어지지 않은 경우)
         self.collection_name = collection_name or self.policy.collection_name
         self.collection = self.db[self.collection_name]
         self.embedder = EmbeddingFactory.get_embedder()
 
     @traceable(name="Hybrid Search")
-    async def search(self, query: str, specialist: str = None, limit: int = 3):
+    async def search(self, query: str, specialist: str = None, limit: int = 3, filters: dict = None):
         """
-        Performs Hybrid Search using RRF (Reciprocal Rank Fusion) with optional Specialist filtering.
+        RRF (Reciprocal Rank Fusion)를 사용하여 하이브리드 검색을 수행합니다.
         """
-        print(f"🔍 [RETRIEVER]: Searching for '{query}' (Specialist: {specialist})...")
+        print(f"🔍 [RETRIEVER]: '{query}' 검색 중 (전문가: {specialist}, 필터: {filters})...")
         
-        # Treat 'General' as no filter (matches all docs including those with empty specialists)
+        # 1. 입력 전처리
         if specialist == "General":
             specialist = None
             
-        # 1. Vector Search with Pre-filter
+        # 2. 개별 검색 실행 (벡터 및 키워드)
+        vector_results = await self._run_vector_search(query, specialist, filters, limit)
+        keyword_results = await self._run_keyword_search(query, specialist, filters, limit)
+
+        # 3. RRF를 사용한 결합 및 랭킹
+        merged = self._rank_and_merge(vector_results, keyword_results, limit)
+        
+        print(f"✅ [RETRIEVER]: {len(merged)}건의 결과를 찾았습니다.")
+        return merged
+
+    async def _run_vector_search(self, query: str, specialist: str, filters: dict, limit: int):
+        """Atlas 벡터 검색 로직을 처리합니다."""
         query_vector = await self.embedder.embed_query(query)
         
+        # 메타데이터 필터 구성
+        combined_filter = {}
+        if specialist:
+            combined_filter["specialists"] = specialist
+        if filters:
+            combined_filter.update(filters)
+            
         vector_search_stage = {
             "$vectorSearch": {
                 "index": "vector_index",
@@ -42,52 +60,63 @@ class HybridRetriever:
                 "limit": limit * 2
             }
         }
-        
-        if specialist:
-            vector_search_stage["$vectorSearch"]["filter"] = {
-                "specialists": specialist
-            }
+        if combined_filter:
+            vector_search_stage["$vectorSearch"]["filter"] = combined_filter
 
-        vector_results = []
         try:
-            vector_results = await self.collection.aggregate([
+            return await self.collection.aggregate([
                 vector_search_stage,
                 { "$set": { "score_type": "vector" } }
             ]).to_list(None)
         except Exception as e:
-            print(f"Vector Search Error: {e}")
+            print(f"벡터 검색 오류: {e}")
+            return []
 
-        # 2. Keyword Search (Atlas Search)
-        keyword_results = []
+    async def _run_keyword_search(self, query: str, specialist: str, filters: dict, limit: int):
+        """메타데이터 필터링을 포함한 Atlas 검색 (BM25)을 처리합니다."""
         try:
             tokenized_query = tokenize_korean(query)
-            search_query = {
-                "index": "keyword_index",
-                "text": {
-                    "query": tokenized_query,
-                    "path": "tokenized_text" # Standard path in our schema
-                }
-            }
             
-            if specialist:
+            if specialist or filters:
+                must_clauses = [{"text": {"query": tokenized_query, "path": "tokenized_text"}}]
+                filter_clauses = []
+                
+                if specialist:
+                    filter_clauses.append({"text": {"query": specialist, "path": "specialists"}})
+                
+                if filters:
+                    for k, v in filters.items():
+                        if isinstance(v, dict):
+                            if "$lte" in v: filter_clauses.append({"range": {"path": k, "lte": v["$lte"]}})
+                            elif "$gte" in v: filter_clauses.append({"range": {"path": k, "gte": v["$gte"]}})
+                            elif "$eq" in v: filter_clauses.append({"equals": {"path": k, "value": v["$eq"]}})
+                        else:
+                            filter_clauses.append({"equals": {"path": k, "value": v}})
+
                 search_query = {
                     "index": "keyword_index",
                     "compound": {
-                        "must": [{"text": {"query": tokenized_query, "path": "tokenized_text"}}],
-                        "filter": [{"text": {"query": specialist, "path": "specialists"}}]
+                        "must": must_clauses,
+                        "filter": filter_clauses if filter_clauses else [{"wildcard": {"path": "*", "query": "*"}}]
                     }
                 }
+            else:
+                search_query = {
+                    "index": "keyword_index",
+                    "text": {"query": tokenized_query, "path": "tokenized_text"}
+                }
 
-            keyword_results = await self.collection.aggregate([
+            return await self.collection.aggregate([
                 { "$search": search_query },
                 { "$limit": limit * 2 },
                 { "$set": { "score_type": "keyword" } }
             ]).to_list(None)
         except Exception as e:
-            # Failure here is common if the Search Index doesn't exist on M0
-            print(f"Keyword Search (BM25) skipped/failed: {e}")
+            print(f"키워드 검색 실패: {e}")
+            return []
 
-        # 3. RRF Combination (Fallback to Vector if Keyword is empty)
+    def _rank_and_merge(self, vector_results, keyword_results, limit):
+        """RRF (Reciprocal Rank Fusion)를 적용하고 결과를 병합합니다."""
         scores = {}
         for rank, doc in enumerate(vector_results):
             doc_id = str(doc.get("_id"))
@@ -97,16 +126,14 @@ class HybridRetriever:
             doc_id = str(doc.get("_id"))
             scores[doc_id] = scores.get(doc_id, 0) + 1 / (rank + 60)
         
-        # Merge and Sort
-        merged = []
-        seen = set()
         all_docs = vector_results + keyword_results
-        
         if not all_docs:
             return []
 
         all_docs_sorted = sorted(all_docs, key=lambda x: scores.get(str(x.get("_id")), 0), reverse=True)
         
+        merged = []
+        seen = set()
         for doc in all_docs_sorted:
             doc_id = str(doc.get("_id"))
             if doc_id not in seen:
@@ -114,9 +141,8 @@ class HybridRetriever:
                 merged.append(doc)
                 seen.add(doc_id)
         
-        print(f"✅ [RETRIEVER]: Found {len(merged)} results.")
         return merged[:limit]
 
-# Example Usage
+# 사용 예시
 # retriever = HybridRetriever(collection_name="breeds")
 # results = await retriever.search("활동적인 고양이 추천해줘")

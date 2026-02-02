@@ -1,32 +1,28 @@
-from typing import List, Optional, TypedDict, Annotated, Sequence, Dict, Any
+"""
+LangGraph 워크플로우 에이전트 상태 정의
+"""
+from typing import Annotated, Sequence, Dict, Any, Optional, List
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 
-class AgentState(TypedDict):
+
+class AgentState(Dict[str, Any]):
     """
-    Root state for the Cat Head Butler service.
+    고양이 집사 서비스 상태.
+
+    - messages: 사용자 대화 전용 (HumanMessage + 최종 AIMessage)
+    - specialist_result: 전문가 노드의 구조화된 JSON (내부 통신용)
     """
-    # Standard conversation history
+    # 사용자 대화 (HumanMessage + 집사의 최종 AIMessage만 포함)
     messages: Annotated[Sequence[BaseMessage], add_messages]
-    
-    # Global User Profile (Housing, Activity, Budget, etc.)
     user_profile: Dict[str, Any]
-    
-    # Adoption Team State
-    selected_breed: Optional[str]
-    shelter_info: Optional[List[Dict[str, Any]]]
-    adoption_sub_specialist: Optional[str]
-    
-    # Care Team State
-    is_emergency: bool
-    care_category: Optional[str] # 'health', 'behavior', 'general'
-    care_sub_specialist: Optional[str]
-    
-    # Final response control
-    final_output: Optional[str]
-    
-    # Debug & Transparency Metadata
-    debug_info: Optional[Dict[str, Any]]
-    
-    # Internal Routing State (for Conditional Edges)
+
+    # 라우팅
     router_decision: Optional[str]
+
+    # 내부: 전문가 → 집사 구조화된 결과
+    specialist_result: Optional[Dict[str, Any]]
+
+    # UI용 결과 (품종 카드, RAG 출처)
+    recommendations: Optional[List[Dict[str, Any]]]
+    rag_docs: Optional[List[Dict[str, Any]]]
