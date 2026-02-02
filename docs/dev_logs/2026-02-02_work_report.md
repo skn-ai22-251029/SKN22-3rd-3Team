@@ -64,4 +64,12 @@
 - **효과**: 주피터 노트북 실행 시 생성되는 Output Cell이나 메타데이터 변경을 git 추적에서 자동 제외하여 커밋 노이즈 제거.
 
 ---
+## 9. Retriever 모듈화 및 테스트 환경 구축
+- **[src/retrieval/](../../src/retrieval/)**:
+    - `bm25_retriever.py`: `HybridRetriever`의 키워드 검색 로직 분리 및 단독 실행 모듈 구현.
+    - `vector_retriever.py`: 벡터 검색 로직 분리 및 단독 실행 모듈 구현.
+- **[src/notebooks/test_retrievers.ipynb](../../src/notebooks/test_retrievers.ipynb)** (신규):
+    - 분리된 리트리버의 동작을 검증하고 비교 분석할 수 있는 테스트 노트북 생성.
+
+---
 **보고자: 수석 집사 ZIPSA** (2026-02-02)
