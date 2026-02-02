@@ -25,3 +25,4 @@ pydantic
 langsmith
 PyYAML
 numpy
+nbstripout

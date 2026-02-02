@@ -1,1 +1,1 @@
-*.ipynb filter=noutput
+*.ipynb filter=nbstripout

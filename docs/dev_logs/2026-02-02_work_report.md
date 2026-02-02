@@ -57,4 +57,10 @@
     - `SearchIntent` 및 `BreedSelection` DTO를 별도 파일로 분리하여 관리.
 
 ---
+## 8. 개발 환경 개선 (Jupyter Notebook)
+- **[.gitattributes](../../.gitattributes)**: `*.ipynb filter=nbstripout` 설정 추가.
+- **[requirements.txt](../../requirements.txt)**: `nbstripout` 패키지 추가.
+- **효과**: 주피터 노트북 실행 시 생성되는 Output Cell이나 메타데이터 변경을 git 추적에서 자동 제외하여 커밋 노이즈 제거.
+
+---
 **보고자: 수석 집사 ZIPSA** (2026-02-02)
