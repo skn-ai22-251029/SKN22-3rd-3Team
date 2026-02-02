@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage
 from langgraph.types import Command
@@ -7,22 +7,20 @@ from .state import AgentState
 from src.core.prompts.prompt_manager import prompt_manager
 from src.retrieval.hybrid_search import HybridRetriever
 from src.core.models.user_profile import UserProfile
+from src.core.models.matchmaker import BreedSelection, SearchIntent
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
-
-class BreedSelection(BaseModel):
-    """에이전틱 선별용 구조화된 출력."""
-    selected_indices: List[int] = Field(..., max_items=3, description="후보 목록에서 선택한 품종 인덱스")
-    reasoning: str = Field(..., description="해당 3종을 선택한 이유")
 
 async def matchmaker_node(state: AgentState) -> Command:
     """
     매치메이커: 고양이 품종 추천 전문가.
-    에이전틱 선별 방식: 10건 검색 후 LLM이 상위 3건 선별.
+    1. 검색 의도 분류 (LOOKUP vs RECOMMEND)
+    2. 동적 쿼리 생성 및 검색
+    3. 에이전틱 선별 (Top 3)
     """
     query = state["messages"][-1].content
     
-    # UserProfile 초기화 (dict 또는 객체 모두 처리)
+    # UserProfile 초기화
     profile_data = state.get("user_profile", {})
     if isinstance(profile_data, dict):
         profile = UserProfile.from_dict(profile_data)
@@ -32,31 +30,54 @@ async def matchmaker_node(state: AgentState) -> Command:
     context = profile.to_context_string()
     persona = prompt_manager.get_prompt("matchmaker", field="persona")
 
-    # 1. 10건 후보 검색 (넓은 범위)
+    # 1. 검색 의도 분류 (Intent Classification)
+    intent_classifier = llm.with_structured_output(SearchIntent)
+    intent = await intent_classifier.ainvoke([
+        SystemMessage(content=(
+            "당신은 고양이 전문가입니다. 사용자의 질문을 분석하여 검색 의도를 분류하세요.\n"
+            "- LOOKUP: 특정 품종에 대한 정보나 특징을 묻는 경우 (프로필 무시)\n"
+            "- RECOMMEND: 추천을 요청하는 경우 (사용자 환경 프로필 반영 필요)"
+        )),
+        SystemMessage(content=query)
+    ], config={"tags": ["router_classification"]})
+
+    # 2. 검색 쿼리 구성
+    if intent.category == "RECOMMEND":
+        # 추천: 프로필 적극 반영
+        search_query = f"{intent.keywords} (집사 환경: {context})"
+        specialist_mode = "Matchmaker (Recommendation)"
+    else:
+        # 단순 조회: 프로필 배제
+        search_query = intent.keywords
+        specialist_mode = "Matchmaker (Lookup)"
+        
+    print(f"🕵️ [MATCHMAKER] Intent: {intent.category}, Query: {search_query}")
+
+    # 3. 10건 후보 검색
     retriever = HybridRetriever(version="v3", collection_name="care_guides")
-    search_query = f"{query} (집사 환경: {context})"
     raw_results = await retriever.search(
-        search_query, specialist="Matchmaker",
-        filters={"categories": "Breeds"}, limit=10
+        search_query, 
+        specialist="Matchmaker", # 필터링용 메타데이터 태그
+        filters={"categories": "Breeds"}, 
+        limit=10
     )
 
     if not raw_results:
         return Command(update={"specialist_result": {"source": "matchmaker", "rag_docs": []}}, goto="head_butler")
 
-    # 2. 에이전틱 랭킹: LLM이 10건 중 최적 3건 선별
+    # 4. 에이전틱 랭킹: LLM이 10건 중 최적 3건 선별
     selection_prompt = f"""당신은 고양이 전문 매치메이커입니다. 
 아래의 [사용자 환경]과 [질문]을 바탕으로, 10개의 [후보 리스트] 중에서 가장 적합한 3마리를 선정하세요.
 
 [사용자 환경]
-{context}
+{context if intent.category == "RECOMMEND" else "(단순 조회이므로 환경 무시)"}
 
 [질문]
 {query}
 
 [선정 원칙]
-1. 알레르기가 있다면 '저자극성(hypoallergenic: 1)' 품종을 최우선으로 하세요. 
-2. 주거 환경과 활동량이 매칭되는지 확인하세요.
-3. 질문에서 강조한 성격이나 특징을 우선하세요.
+1. 단순 조회(LOOKUP)일 경우 질문한 품종을 최우선으로 찾으세요.
+2. 추천(RECOMMEND)일 경우 알레르기/거주환경을 엄격히 고려하세요.
 
 [후보 리스트]
 """
@@ -71,7 +92,7 @@ async def matchmaker_node(state: AgentState) -> Command:
         config={"tags": ["router_classification"]}
     )
     
-    # 3. 상위 3건 필터링
+    # 5. 상위 3건 필터링
     final_indices = selection.selected_indices[:3]
     top_results = [raw_results[i] for i in final_indices if i < len(raw_results)]
 
@@ -112,11 +133,13 @@ async def matchmaker_node(state: AgentState) -> Command:
         for r in raw_results
     ]
 
+    reasoning_text = f"**[{intent.category}]** 모드로 검색했습니다.\n\n[선별 이유]\n{selection.reasoning}"
+
     specialist_result = {
         "source": "matchmaker",
         "type": "breed_recommendation",
         "specialist_name": "매치메이커 비서",
-        "persona": persona + f"\n\n[추천 근거]\n{selection.reasoning}",
+        "persona": persona + f"\n\n{reasoning_text}",
         "user_context": context,
         "rag_context": rag_context,
         "rag_docs": rag_docs,

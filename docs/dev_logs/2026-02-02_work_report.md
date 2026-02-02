@@ -48,5 +48,13 @@
 - **[static/](../../static/)**:
     - TheCatAPI 등 외부 CDN 이미지를 적극 활용함에 따라 로컬 불필요 리소스 폴더 삭제.
 
+## 7. Matchmaker 검색 의도 분류 (Intent Classification)
+- **[matchmaker.py](../../src/agents/matchmaker.py)**:
+    - 사용자의 질문이 **단순 조회(LOOKUP)**인지 **추천 요청(RECOMMEND)**인지 먼저 판단하는 로직 추가.
+    - LOOKUP: 사용자 프로필(거주환경 등)을 검색어에서 배제하여 "메인쿤" 등 특정 품종 검색 시 왜곡 방지.
+    - RECOMMEND: 기존처럼 사용자 프로필을 반영하여 맞춤형 추천.
+- **[core/models/matchmaker.py](../../src/core/models/matchmaker.py)** (신규):
+    - `SearchIntent` 및 `BreedSelection` DTO를 별도 파일로 분리하여 관리.
+
 ---
 **보고자: 수석 집사 ZIPSA** (2026-02-02)
