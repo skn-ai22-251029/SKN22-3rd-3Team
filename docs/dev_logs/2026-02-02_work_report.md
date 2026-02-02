@@ -68,8 +68,10 @@
 - **[src/retrieval/](../../src/retrieval/)**:
     - `bm25_retriever.py`: `HybridRetriever`의 키워드 검색 로직 분리 및 단독 실행 모듈 구현.
     - `vector_retriever.py`: 벡터 검색 로직 분리 및 단독 실행 모듈 구현.
-- **[src/notebooks/test_retrievers.ipynb](../../src/notebooks/test_retrievers.ipynb)** (신규):
-    - 분리된 리트리버의 동작을 검증하고 비교 분석할 수 있는 테스트 노트북 생성.
+- **[src/notebooks/](../../src/notebooks/)** (신규/분리):
+    - `test_bm25.ipynb`: 키워드 매칭, 토크나이저, 필터링 기능 단독 테스트.
+    - `test_vector.ipynb`: 의미론적 유사도 검색 및 미등록 품종 동작 패턴 분석.
+    - `analysis_retrieval_metrics.ipynb`: Ground Truth(정답셋) 기반 Hit@k 정확도 측정 및 RRF 성능 비교 분석.
 
 ---
 **보고자: 수석 집사 ZIPSA** (2026-02-02)
