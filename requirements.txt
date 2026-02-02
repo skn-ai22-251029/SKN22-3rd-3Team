@@ -12,8 +12,6 @@ requests
 lxml
 aiohttp
 openai
-chromadb
-pinecone-client
 motor
 sentence-transformers
 transformers
@@ -25,6 +23,5 @@ uvloop
 jinja2
 pydantic
 langsmith
-playwright
 PyYAML
 numpy
