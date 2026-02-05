@@ -52,3 +52,44 @@ Streamlit을 이용한 사용자 인터페이스 코드입니다.
 실행 가능한 Python 스크립트 모음입니다.
 - **crawl/**: 데이터 크롤러
 - **process/**: 데이터 전처리 스크립트
+
+---
+
+## 데이터 파이프라인 (V3 Pipeline Flow)
+ZIPSA의 데이터가 어떻게 수집되고 처리되는지 보여주는 흐름도입니다.
+
+```mermaid
+graph TD
+    %% 1. 데이터 수집 (Crawl)
+    subgraph S1 ["Step 1: 수집 (scripts/crawl)"]
+        Raw1["TheCatAPI"]
+        Raw2["Wikipedia"]
+        Raw3["BemyPet"]
+    end
+
+    %% 2. 전처리 (Process)
+    subgraph S2 ["Step 2: 전처리 & 정제 (src/pipelines)"]
+        Cleaner["V3Preprocessor<br/>(LLM 정제 & 토큰화)"]
+    end
+
+    %% 3. 임베딩 (Embed)
+    subgraph S3 ["Step 3: 임베딩 (src/embeddings)"]
+        Embedder["V3Embedder<br/>(OpenAI Embedding)"]
+    end
+
+    %% 4. 적재 (Load)
+    subgraph S4 ["Step 4: 저장 (MongoDB Atlas)"]
+        DB[("Cat Library<br/>(Vector Store)")]
+    end
+
+    Raw1 & Raw2 & Raw3 --> Cleaner
+    Cleaner --> Embedder
+    Embedder --> DB
+```
+
+### 흐름 설명
+1. **수집 (Crawl)**: `scripts/crawl/`의 스크립트들이 외부 사이트에서 원본 데이터를 수집하여 `data/raw/`에 JSON으로 저장합니다.
+2. **전처리 (Process)**: `src/pipelines/v3/preprocessor.py`가 노이즈를 제거하고, LLM을 사용해 검색에 최적화된 제목과 요약을 생성합니다.
+3. **임베딩 (Embed)**: `src/pipelines/embeddings/` 모듈이 정제된 텍스트를 벡터(숫자) 형태로 변환합니다.
+4. **저장 (Load)**: 최종 데이터는 MongoDB Atlas에 저장되어, 검색 엔진(RAG)이 사용할 준비를 마칩니다.
+
